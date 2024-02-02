@@ -28,17 +28,23 @@ export default function Home() {
       </section>
       <section className="mb-8">
         <ul className="flex flex-row justify-around">
-          <li className="flex align-middle">
-            <Image src={fcIcon} alt="Farcaster Icon" width={18} height={18} className="mr-2"/>
-            Farcaster
+          <li>
+            <a href="https://warpcast.com/ncale.eth" className="flex align-middle">
+              <Image src={fcIcon} alt="Farcaster Icon" width={18} height={18} className="mr-2"/>
+              Farcaster
+            </a>
           </li>
-          <li className="flex align-middle">
-            <Image src={arenaIcon} alt="Arena Icon" width={20} height={20} className="mr-2"/>
-            Are.na
+          <li>
+            <a href="https://www.are.na/nick-brodeur" className="flex align-middle">
+              <Image src={arenaIcon} alt="Arena Icon" width={20} height={20} className="mr-2"/>
+              Are.na
+            </a>
           </li>
-          <li className="flex align-middle">
-            <Image src={substackIcon} alt="Substack Icon" width={15} height={15} className="mr-2"/>
-            Substack
+          <li>
+            <a href="https://nickbrodeur.substack.com" className="flex align-middle">
+              <Image src={substackIcon} alt="Substack Icon" width={15} height={15} className="mr-2"/>
+              Substack
+            </a>
           </li>
         </ul>
       </section>
