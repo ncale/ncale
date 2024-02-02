@@ -19,17 +19,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={`box-border ${inter.className}`}>
         <div className="flex justify-center">
+          
           {/* Side Bar */}
-          <header className="bg-green-200 p-6 pt-16 w-1/6 h-screen">
+          <header className="p-6 pt-16 w-44 h-screen">
             <ul>
-              <li className="font-bold">ncale.eth</li>
+              <li className="font-bold mb-1">nickbrodeur.xyz / ncale.eth</li>
               <li><Link href="/">home</Link></li>
               <li><Link href="projects">projects</Link></li>
             </ul>
           </header>  
               
           {/* Main Content */}
-          <div className="bg-blue-200 w-7/12">
+          <div className="w-7/12">
             {children}
           </div>
         </div>
