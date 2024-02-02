@@ -1,9 +1,18 @@
+import portrait from "../../public/IMG_1184.jpeg";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-6 pt-16">
       <section className="flex flex-row mb-6">
-        <div>
-          <p>IMG Placeholder</p>
+        <div className="mr-4">
+          <Image
+            src={portrait}
+            width={200}
+            height={400}
+            className="rounded-full"
+            alt="A portrait"
+          />
         </div>
         <div>
           <h1 className="text-lg font-medium">Hi, I'm Nick Brodeur</h1>
