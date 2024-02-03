@@ -18,12 +18,13 @@ export default function Home() {
           />
         </div>
         <div>
-          <h1 className="text-lg font-medium mb-2">Hi, I'm Nick Brodeur</h1>
+          <h1 className="text-lg font-medium mb-1">Hi, I'm Nick Brodeur</h1>
           <p className="text-sm mb-2">I'm an amateur programmer, internet enthusiast, reader, and aspiring writer.</p>
           <p className="text-sm mb-2">I believe in giving people more sovereignty over their lives. That means I enjoy working on and alongside 
             systems that are decentralized, transparent, lasting, and simple.</p>
           <p className="text-sm mb-2">Check out my projects if you'd like to see what I've been working on lately. Also, if you'd like to reach me, feel 
-            free to send me an email or Farcaster DM.</p>
+            free to send me an <a href="mailto:nicholasbrodeur@outlook.com" target="_blank">email</a> or 
+            <a href="https://warpcast.com/ncale.eth" target="_blank">Farcaster DM</a>.</p>
         </div>
       </section>
       <section className="mb-6">
