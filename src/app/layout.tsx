@@ -21,16 +21,18 @@ export default function RootLayout({
         <div className="flex justify-center">
           
           {/* Side Bar */}
-          <header className="p-6 pt-16 w-44 h-screen">
-            <ul>
-              <li className="font-bold mb-1">nickbrodeur.xyz / ncale.eth</li>
-              <li><Link href="/">home</Link></li>
-              <li><Link href="projects">projects</Link></li>
-            </ul>
+          <header className="pt-16 w-40 h-screen">
+            <div className="bg-green-200 p-4 pt-3 rounded">
+              <ul>
+                <li className="font-bold mb-1">nickbrodeur.xyz / ncale.eth</li>
+                <li><Link href="/">home</Link></li>
+                <li><Link href="projects">projects</Link></li>
+              </ul>
+            </div>
           </header>  
               
           {/* Main Content */}
-          <div className="w-3/5">
+          <div className="rounded w-8/12">
             {children}
           </div>
         </div>
