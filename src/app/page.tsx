@@ -1,6 +1,7 @@
 import pic from "../../public/profile-pic.jpeg";
 import arenaIcon from "../../public/arena-mark.svg";
 import fcIcon from "../../public/fc-icon.svg";
+import githubIcon from "../../public/github-mark.svg";
 import substackIcon from "../../public/substack-icon.svg";
 import Image from "next/image";
 
@@ -33,6 +34,12 @@ export default function Home() {
             <a href="https://warpcast.com/ncale.eth" target="_blank" className="flex align-middle text-sm">
               <Image src={fcIcon} alt="Farcaster Icon" width={18} height={18} className="mr-2"/>
               Farcaster
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ncale" target="_blank" className="flex align-middle text-sm">
+              <Image src={githubIcon} alt="Github Icon" width={16} height={16} className="mr-1.5"/>
+              Github
             </a>
           </li>
           <li>
