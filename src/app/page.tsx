@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-6 pt-16">
       <section className="flex flex-row mb-6">
-        <div className="min-h-48 min-w-48 relative mr-4">
+        <div className="min-h-52 min-w-52 max-h-52 max-w-52 relative mr-4 hidden md:block">
           <Image
             src={pic}
             width={500}
