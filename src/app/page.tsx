@@ -12,11 +12,11 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <section className="flex flex-row mb-6">
         <div>
-          <h1 className="text-xl font-medium mb-1.5">Hi, I'm Nick Brodeur</h1>
-          <p className="text-sm mb-2">I'm an amateur programmer, internet enthusiast, reader, and aspiring writer.</p>
+          <h1 className="text-xl font-medium mb-1.5">Hi, I&apos;m Nick Brodeur</h1>
+          <p className="text-sm mb-2">I&apos;m an amateur programmer, internet enthusiast, reader, and aspiring writer.</p>
           <p className="text-sm mb-2">I believe in giving people more sovereignty, and I think technology is one of the surest ways to do that. That means I enjoy working on and alongside 
             systems that are decentralized, transparent, lasting, and simple.</p>
-          <p className="text-sm mb-2">Check out my projects if you'd like to see what I've been working on lately. Also, if you'd like to reach me, feel 
+          <p className="text-sm mb-2">Check out my projects if you&apos;d like to see what I&apos;ve been working on lately. Also, if you&apos;d like to reach me, feel 
             free to send me an <a href="mailto:nicholasbrodeur@outlook.com" target="_blank" className="underline">email</a> or <a href="https://warpcast.com/ncale.eth" target="_blank" className="underline">Farcaster DM</a>.</p>
           <p className="text-sm mb-2 font-medium">Socials...</p>
           <ul className="flex flex-row">

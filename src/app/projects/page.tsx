@@ -14,7 +14,7 @@ export default function Home() {
       <section className="flex flex-col">
         <div className="">
           <h2 className="text-md font-bold">Ex. Project Title</h2>
-          <p className="text-sm pb-1">Ex. small description of a project that would fill in this space. Likely the 'About' on Github.</p>
+          <p className="text-sm pb-1">Ex. small description of a project that would fill in this space. Likely the &apos;About&apos; on Github.</p>
           <ul className="flex flex-col">
             <li>
               <a href="" target="_blank" className="text-sm flex items-center w-fit">
