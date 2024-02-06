@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const inter = Nunito({ subsets: ["latin"] });
+const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,25 +17,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`box-border ${inter.className}`}>
-        <div className="flex justify-center bg-white">
+      <body className={`box-border ${font.className}`}>
+        <div className="bg-white flex flex-col items-center md:flex-row md:items-start md:justify-center"> {/* items-center */}
           
           {/* Side Bar */}
-          <header className="pt-16 w-40 h-screen">
-            <div className="bg-green-200 p-4 pt-3 rounded">
-              <ul>
-                <li className="font-bold mb-1">nickbrodeur.xyz / ncale.eth</li>
-                <li><Link href="/">home</Link></li>
-                <li><Link href="projects">projects</Link></li>
+          <header className="w-9/12 pt-8 md:w-40 md:pt-12 md:h-screen">
+            <div className="bg-green-200 p-4 pt-3 rounded flex justify-between md:flex-col md:justify-start">
+              <div className="font-bold w-20 md:mb-1">nickbrodeur.xyz / ncale.eth</div> {/*  mb-1 */}
+              <ul className="flex flex-row md:flex-col">
+                <li className="ml-2 md:ml-0"><Link href="/">home</Link></li>
+                <li className="ml-2 md:ml-0"><Link href="projects">projects</Link></li>
               </ul>
             </div>
           </header>  
               
           {/* Main Content */}
-          <div className="rounded w-8/12">
+          <div className="w-9/12 p-2 pt-4 md:w-8/12 md:p-6 md:pt-12">
             {children}
           </div>
-          
+
         </div>
       </body>
     </html>
