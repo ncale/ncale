@@ -6,7 +6,6 @@ import githubIcon from "../../public/github-mark.svg";
 import substackIcon from "../../public/substack-icon.svg";
 // Import image gallery
 import pic1 from "../../public/profile-pic.jpeg";
-import pic2 from "../../public/profile-pic.jpeg";
 
 export default function Home() {
   return (
@@ -54,24 +53,6 @@ export default function Home() {
           <div className="min-h-44 min-w-44 max-h-44 max-w-44 relative mr-2 mb-2">
               <Image
                 src={pic1}
-                width={500}
-                height={500}
-                className="rounded"
-                alt="A portrait"
-              />
-            </div>
-            <div className="min-h-44 min-w-44 max-h-44 max-w-44 relative mr-2 mb-2">
-              <Image
-                src={pic2}
-                width={500}
-                height={500}
-                className="rounded"
-                alt="A portrait"
-              />
-            </div>
-            <div className="min-h-44 min-w-44 max-h-44 max-w-44 relative mr-2 mb-2">
-              <Image
-                src={pic2}
                 width={500}
                 height={500}
                 className="rounded"
