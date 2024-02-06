@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`box-border ${inter.className}`}>
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-white">
           
           {/* Side Bar */}
           <header className="pt-16 w-40 h-screen">
@@ -35,6 +35,7 @@ export default function RootLayout({
           <div className="rounded w-8/12">
             {children}
           </div>
+          
         </div>
       </body>
     </html>
