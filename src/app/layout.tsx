@@ -22,7 +22,7 @@ export default function RootLayout({
           
           {/* Side Bar */}
           <header className="w-9/12 pt-8 md:w-40 md:pt-12 md:h-screen">
-            <div className="bg-green-200 p-4 pt-3 rounded flex justify-between md:flex-col md:justify-start">
+            <div className="bg-rainbow-gradient p-4 pt-3 rounded flex justify-between md:flex-col md:justify-start">
               <div className="font-bold w-20 md:mb-1">nickbrodeur.xyz / ncale.eth</div> {/*  mb-1 */}
               <ul className="flex flex-row md:flex-col">
                 <li className="ml-2 md:ml-0"><Link href="/">home</Link></li>
