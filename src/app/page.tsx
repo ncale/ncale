@@ -1,11 +1,6 @@
 import Image from "next/image";
-// Import social icons
-import arenaIcon from "../../public/arena-mark.svg";
-import fcIcon from "../../public/fc-icon.svg";
-import githubIcon from "../../public/github-mark.svg";
-import substackIcon from "../../public/substack-icon.svg";
-// Import image gallery
 import pic1 from "../../public/profile-pic.jpeg";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
   return (
@@ -18,34 +13,10 @@ export default function Home() {
             systems that are decentralized, transparent, lasting, and simple.</p>
           <p className="text-sm mb-2">Check out my projects if you&apos;d like to see what I&apos;ve been working on lately. Also, if you&apos;d like to reach me, feel 
             free to send me an <a href="mailto:nicholasbrodeur@outlook.com" target="_blank" className="underline">email</a> or <a href="https://warpcast.com/ncale.eth" target="_blank" className="underline">Farcaster DM</a>.</p>
-          <p className="text-sm mb-2 font-medium">Socials...</p>
-          <ul className="flex flex-row">
-            <li>
-              <a href="https://warpcast.com/ncale.eth" target="_blank" className="flex align-middle text-sm mr-2">
-                <Image src={fcIcon} alt="Farcaster Icon" width={18} height={18} className="mr-2"/>
-                Farcaster
-              </a>
-            </li>
-            <li>
-              <a href="https://www.are.na/nick-brodeur" target="_blank" className="flex align-middle text-sm mr-3">
-                <Image src={arenaIcon} alt="Arena Icon" width={18} height={18} className="mr-1.5"/>
-                Are.na
-              </a>
-            </li>
-            <li>
-              <a href="https://nickbrodeur.substack.com" target="_blank" className="flex align-middle text-sm mr-2">
-                <Image src={substackIcon} alt="Substack Icon" width={12} height={12} className="mr-2"/>
-                Substack
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ncale" target="_blank" className="flex align-middle text-sm mr-2">
-                <Image src={githubIcon} alt="Github Icon" width={16} height={16} className="mr-1.5"/>
-                Github
-              </a>
-            </li>
-          </ul>
         </div>
+      </section>
+      <section className="mb-6">
+        <SocialLinks />
       </section>
       <section className="mb-6">
         <h2 className="text-md font-medium mb-1">Image Gallery</h2>
