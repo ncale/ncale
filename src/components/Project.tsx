@@ -1,6 +1,6 @@
 import Image from "next/image";
-import linkIcon from "../../../public/link.svg";
-import githubIcon from "../../../public/github-mark.svg";
+import linkIcon from "../../public/link.svg";
+import githubIcon from "../../public/github-mark.svg"
 
 export default function Project( { project }: { project: { title: string, desc: string, projLink: string, githubLink: string }} ) {
 	return (
