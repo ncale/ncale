@@ -11,17 +11,17 @@ const projectData = [
 
 export default function Home() {
   
+  const projects = projectData.map((project, i) => (<Project key={i} project={project} />))
   
   return (
     <main className="flex min-h-screen flex-col">
-      <section className="flex flex-row mb-4">
+      <section className="flex flex-row mb-1">
         <div>
           <h1 className="text-xl font-medium mb-1.5">Projects</h1>
-          <p className="text-sm mb-2">...</p>
         </div>
       </section>
       <section className="flex flex-col">
-        <Project project={projectData[0]} />
+        {projects}
       </section>
     </main>
   );
