@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`box-border ${font.className}`}>
+      <body className={`box-border ${font.className} bg-white`}>
         <div className="bg-white flex flex-col items-center md:flex-row md:items-start md:justify-center"> {/* items-center */}
           
           {/* Side Bar */}
