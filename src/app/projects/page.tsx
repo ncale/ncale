@@ -2,10 +2,10 @@ import Project from "@/components/Project";
 
 const projectData = [
   {
-    title: "Ex. Project Title",
-    desc: "Ex. small description of a project that would fill in this space. Likely the 'About' on Github.",
-    projLink: "",
-    githubLink: "",
+    title: "BasedFriends | basedfriends.xyz",
+    desc: "See when your friends are online or onchain with BasedFriends - a web app that integrates with Farcaster to build a personalized friends list",
+    projLink: "https://basedfriends.xyz",
+    githubLink: "https://github.com/ncale/based-friends",
   },
 ]
 
