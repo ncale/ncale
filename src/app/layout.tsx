@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   title: 'Nick Brodeur',
   description: 'Hi, I\'m Nick Brodeur. I\'m an amateur programmer, internet enthusiast...',
   authors: [{ name: 'Nick Brodeur' }],
-  keywords: [],
+  keywords: ['Nick', 'Brodeur', 'developer', 'crypto', 'web3'],
+  metadataBase: new URL('https://nickbrodeur.com'),
   openGraph: {
     title: 'Nick Brodeur',
     description: 'Hi, I\'m Nick Brodeur. I\'m an amateur programmer, internet enthusiast...',
