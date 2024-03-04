@@ -2,10 +2,12 @@ import Project from "@/components/Project";
 
 const projectData = [
   {
-    title: "BasedFriends | basedfriends.xyz",
+    title: "BasedFriends",
     desc: "See when your friends are online or onchain with BasedFriends - a web app that integrates with Farcaster to build a personalized friends list",
+    projDomain: "basedfriends.xyz",
     projLink: "https://basedfriends.xyz",
     githubLink: "https://github.com/ncale/based-friends",
+    demoLink: "https://www.loom.com/share/e509901fbd374e38a0bfee293462a216"
   },
 ]
 
