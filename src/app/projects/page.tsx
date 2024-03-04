@@ -6,6 +6,7 @@ const projectData = [
     desc: "See when your friends are online or onchain with BasedFriends - a web app that integrates with Farcaster to build a personalized friends list",
     projLink: "https://basedfriends.xyz",
     githubLink: "https://github.com/ncale/based-friends",
+    demoLink: "https://www.loom.com/share/e509901fbd374e38a0bfee293462a216"
   },
 ]
 
