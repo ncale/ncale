@@ -3,10 +3,20 @@ import linkIcon from "../../public/link.svg";
 import githubIcon from "../../public/github-mark.svg"
 import videoIcon from "../../public/video-icon.svg"
 
-export default function Project( { project }: { project: { title: string, desc: string, projLink: string, githubLink: string, demoLink?: string }} ) {
+export default function Project( { project }: { project: { 
+	title: string, 
+	desc: string, 
+	projDomain: string,
+	projLink: string, 
+	githubLink: string, 
+	demoLink?: string 
+}} ) {
 	return (
 		<div className="mb-5">
-			<h3 className="text-md font-bold leading-tight">{project.title}</h3>
+			<h3 className="text-md font-bold leading-tight">
+				{`${project.title} | `}
+				<a href={project.projLink} target="_blank" className="underline text-blue-600">{project.projDomain}</a>
+			</h3>
 			<p className="text-sm pb-1 leading-tight">{project.desc}</p>
 			<ul className="flex">
 				<li>
