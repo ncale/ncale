@@ -10,13 +10,13 @@ export default function Project( { project }: { project: { title: string, desc: 
 			<ul className="flex">
 				<li>
 					<a href={project.projLink} target="_blank" className="text-sm flex items-center w-fit">
-						<Image src={linkIcon} alt="Link to view the site" width={16} height={16} className="mr-1.5" />
+						<Image src={linkIcon} alt="Link to view the site" width={16} className="mr-1" />
 						Link
 					</a>
 				</li>
 				<li className="ml-2">
 					<a href={project.githubLink} target="_blank" className="text-sm flex items-center w-fit">
-						<Image src={githubIcon} alt="Github Icon" width={15} height={15} className="mr-1"/>
+						<Image src={githubIcon} alt="Github Icon" width={15} className="mr-1"/>
 						Github
 					</a>
 				</li>
