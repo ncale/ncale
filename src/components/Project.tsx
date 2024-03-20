@@ -6,7 +6,7 @@ import videoIcon from "../../public/video-icon.svg"
 export default function Project( { project }: { project: { 
 	title: string, 
 	desc: string, 
-	projDomain: string,
+	projDomain?: string,
 	projLink: string, 
 	githubLink: string, 
 	demoLink?: string 
@@ -14,7 +14,8 @@ export default function Project( { project }: { project: {
 	return (
 		<div className="mb-5">
 			<h3 className="text-md font-bold leading-tight">
-				{`${project.title} | `}
+				{project.title}
+				{project.projDomain ? ' | ' : ''}
 				<a href={project.projLink} target="_blank" className="underline text-blue-600">{project.projDomain}</a>
 			</h3>
 			<p className="text-sm pb-1 leading-tight">{project.desc}</p>
