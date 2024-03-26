@@ -1,6 +1,10 @@
 import Image from "next/image";
 import pic1 from "../../public/profile-pic.jpeg";
+import pic2 from "@/../public/images/pic2.jpeg";
+import pic3 from "@/../public/images/pic3.jpeg";
 import SocialLinks from "@/components/SocialLinks";
+
+const imgList = [pic1, pic2, pic3];
 
 export default function Home() {
   return (
@@ -49,15 +53,20 @@ export default function Home() {
       <section className="mb-5">
         <h2 className="text-md font-semibold mb-1">Image Gallery</h2>
         <div className="flex flex-row flex-wrap">
-          <div className="min-h-44 min-w-44 max-h-44 max-w-44 relative mr-2 mb-2">
-            <Image
-              src={pic1}
-              width={500}
-              height={500}
-              className="rounded"
-              alt="A portrait"
-            />
-          </div>
+          {imgList.map((pic, i) => (
+            <div
+              key={i}
+              className="min-w-44 max-w-44 min-h-44 h-fit relative overflow-hidden mr-2 mb-2 shadow-md"
+            >
+              <Image
+                src={pic}
+                width={500}
+                height={500}
+                className="rounded absolute left-1/2 -translate-x-1/2 min-h-44"
+                alt="A portrait"
+              />
+            </div>
+          ))}
         </div>
       </section>
     </main>
