@@ -33,11 +33,11 @@ export default function Home() {
             </a>{" "}
             or{" "}
             <a
-              href="https://warpcast.com/ncale.eth"
+              href="https://t.me/nbrodeur"
               target="_blank"
               className="underline"
             >
-              Farcaster DM
+              telegram DM
             </a>
             .
           </p>
