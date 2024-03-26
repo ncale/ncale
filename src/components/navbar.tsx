@@ -13,7 +13,7 @@ export default function Navbar() {
         </div>
         <ul className="flex flex-row md:flex-col">
           {links.map(([name, path], i) => (
-            <li className="ml-2 md:ml-0" key={i}>
+            <li className="ml-2 md:ml-0 w-fit hover-grow" key={i}>
               <Link
                 href={path}
                 className={currentPath === path ? "font-bold" : ""}
