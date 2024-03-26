@@ -1,7 +1,7 @@
 import Image from "next/image";
-import linkIcon from "../../public/link.svg";
-import githubIcon from "../../public/github-mark.svg";
-import videoIcon from "../../public/video-icon.svg";
+import linkIcon from "@/../public/icons/link.svg";
+import githubIcon from "@/../public/icons/github-mark.svg";
+import videoIcon from "@/../public/icons/video-icon.svg";
 import { ReactNode } from "react";
 
 export default function Project({

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pic1 from "../../public/profile-pic.jpeg";
+import pic1 from "@/../public/images/profile-pic.jpeg";
 import pic2 from "@/../public/images/pic2.jpeg";
 import pic3 from "@/../public/images/pic3.jpeg";
 import SocialLinks from "@/components/SocialLinks";
