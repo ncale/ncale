@@ -2,13 +2,14 @@ import Image from "next/image";
 import linkIcon from "../../public/link.svg";
 import githubIcon from "../../public/github-mark.svg";
 import videoIcon from "../../public/video-icon.svg";
+import { ReactNode } from "react";
 
 export default function Project({
   project,
 }: {
   project: {
     title: string;
-    desc: string;
+    desc: ReactNode;
     projDomain?: string;
     projLink: string;
     githubLink: string;
@@ -23,7 +24,7 @@ export default function Project({
         <a
           href={project.projLink}
           target="_blank"
-          className="underline text-blue-600"
+          className="underline text-blue-600 hover:text-blue-500"
         >
           {project.projDomain}
         </a>
