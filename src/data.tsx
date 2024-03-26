@@ -7,6 +7,7 @@ export const projectData = [
         identity, and relative voting power. Read more{" "}
         <a
           href="https://govscore.xyz/faq"
+          target="_blank"
           className="underline text-blue-600 hover:text-blue-300"
         >
           here
