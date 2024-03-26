@@ -12,21 +12,23 @@ export default function Navbar() {
           nickbrodeur.com / ncale.eth
         </div>
         <ul className="flex flex-row md:flex-col">
-          <li className="ml-2 md:ml-0">
-            <Link href="/" className={currentPath === "/" ? "font-bold" : ""}>
-              home
-            </Link>
-          </li>
-          <li className="ml-2 md:ml-0">
-            <Link
-              href="/projects"
-              className={currentPath === "/projects" ? "font-bold" : ""}
-            >
-              projects
-            </Link>
-          </li>
+          {links.map(([name, path], i) => (
+            <li className="ml-2 md:ml-0" key={i}>
+              <Link
+                href={path}
+                className={currentPath === path ? "font-bold" : ""}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </header>
   );
 }
+
+const links: Array<[string, `/${string}`]> = [
+  ["home", "/"],
+  ["projects", "/projects"],
+];
