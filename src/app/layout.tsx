@@ -5,12 +5,12 @@ import Navbar from "@/components/navbar";
 
 const font_main = IBM_Plex_Sans({
   subsets: ["latin"],
-  weight: "500",
+  weight: "400",
   variable: "--font-main",
 });
 const font_special = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: "400",
+  weight: "500",
   variable: "--font-special",
 });
 
