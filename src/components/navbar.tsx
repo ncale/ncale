@@ -9,11 +9,11 @@ export default function Navbar() {
     <header className="mb-8 font-app-special">
       <div>
         <ul className="[&>*]:inline">
-          {links.map(([name, path], i) => (
+          {links.map(({ name, href }, i) => (
             <li key={i}>
               <Link
-                href={path}
-                className={currentPath === path ? "line-through" : ""}
+                href={href}
+                className={currentPath === href ? "line-through" : ""}
               >
                 {name}
               </Link>
@@ -26,7 +26,8 @@ export default function Navbar() {
   );
 }
 
-const links: Array<[string, `/${string}`]> = [
-  ["home", "/"],
-  ["projects", "/projects"],
+const links: NavLink[] = [
+  { name: "home", href: "/" },
+  { name: "projects", href: "/projects" },
 ];
+type NavLink = { name: string; href: `/${string}` };
