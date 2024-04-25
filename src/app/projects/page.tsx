@@ -10,7 +10,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <section className="flex flex-row mb-1">
         <div>
-          <h1 className="text-xl font-medium mb-1.5">Projects</h1>
+          <h1 className="text-xl font-medium mb-1.5 font-app-special">
+            Projects
+          </h1>
         </div>
       </section>
       <section className="flex flex-col md:w-[32em]">{projects}</section>

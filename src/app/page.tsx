@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <section className="flex flex-row mb-4 md:w-[32em]">
         <div>
-          <h1 className="text-xl font-medium mb-2">
+          <h1 className="text-xl font-medium mb-2 font-app-special">
             Hi, I&apos;m Nick Brodeur
           </h1>
           <p className="text-sm leading-5 mb-3">
@@ -51,7 +51,9 @@ export default function Home() {
         <SocialLinks />
       </section>
       <section className="mb-5">
-        <h2 className="text-md font-semibold mb-1">Image Gallery</h2>
+        <h2 className="text-md font-semibold mb-1 font-app-special">
+          Image Gallery
+        </h2>
         <div className="flex flex-row flex-wrap">
           {imgList.map((pic, i) => (
             <div
