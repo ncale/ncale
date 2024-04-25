@@ -29,5 +29,6 @@ export default function Navbar() {
 const links: NavLink[] = [
   { name: "home", href: "/" },
   { name: "projects", href: "/projects" },
+  { name: "writing", href: "/writing" },
 ];
 type NavLink = { name: string; href: `/${string}` };
