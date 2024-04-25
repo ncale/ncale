@@ -8,7 +8,7 @@ export const projectData = [
         <a
           href="https://govscore.xyz/faq"
           target="_blank"
-          className="underline text-blue-600 hover:text-blue-300"
+          className="text-blue-600 underline hover:text-blue-300"
         >
           here
         </a>

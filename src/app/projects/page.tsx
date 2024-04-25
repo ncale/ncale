@@ -8,9 +8,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col">
-      <section className="flex flex-row mb-1">
+      <section className="mb-1 flex flex-row">
         <div>
-          <h1 className="text-xl font-medium mb-1.5 font-app-special">
+          <h1 className="mb-1.5 font-app-special text-xl font-medium">
             Projects
           </h1>
         </div>

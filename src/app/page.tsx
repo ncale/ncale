@@ -9,16 +9,16 @@ const imgList = [pic1, pic2, pic3];
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <section className="flex flex-row mb-4 md:w-[32em]">
+      <section className="mb-4 flex flex-row md:w-[32em]">
         <div>
-          <h1 className="text-xl font-medium mb-2 font-app-special">
+          <h1 className="mb-2 font-app-special text-xl font-medium">
             Hi, I&apos;m Nick Brodeur
           </h1>
-          <p className="text-sm leading-5 mb-3">
+          <p className="mb-3 text-sm leading-5">
             I&apos;m an amateur programmer, internet enthusiast, reader, and
             aspiring writer.
           </p>
-          <p className="text-sm leading-5 mb-3">
+          <p className="mb-3 text-sm leading-5">
             I believe in giving people more sovereignty, and I think technology
             is one of the surest ways to do that. That means I enjoy working on
             and alongside systems that are decentralized, transparent, lasting,
@@ -51,20 +51,20 @@ export default function Home() {
         <SocialLinks />
       </section>
       <section className="mb-5">
-        <h2 className="text-md font-semibold mb-1 font-app-special">
+        <h2 className="text-md mb-1 font-app-special font-semibold">
           Image Gallery
         </h2>
         <div className="flex flex-row flex-wrap">
           {imgList.map((pic, i) => (
             <div
               key={i}
-              className="min-w-44 max-w-44 min-h-44 h-fit relative overflow-hidden mr-2 mb-2 shadow-md"
+              className="relative mb-2 mr-2 h-fit min-h-44 min-w-44 max-w-44 overflow-hidden shadow-md"
             >
               <Image
                 src={pic}
                 width={500}
                 height={500}
-                className="rounded absolute left-1/2 -translate-x-1/2 min-h-44"
+                className="absolute left-1/2 min-h-44 -translate-x-1/2 rounded"
                 alt="A portrait"
               />
             </div>

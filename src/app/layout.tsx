@@ -47,14 +47,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`box-border ${font_main.variable} ${font_special.variable} font-app-main bg-paper`}
+        className={`box-border ${font_main.variable} ${font_special.variable} bg-paper font-app-main`}
       >
         <div className="flex flex-col items-center md:flex-row md:items-start md:justify-start md:px-20">
           {/* Navbar */}
           <Navbar />
 
           {/* Main Content */}
-          <div className="w-11/12 p-2 pt-4 mt-24 md:w-full md:p-6 md:pt-12 md:ml-40 md:mt-0">
+          <div className="mt-24 w-11/12 p-2 pt-4 md:ml-40 md:mt-0 md:w-full md:p-6 md:pt-12">
             {children}
           </div>
         </div>

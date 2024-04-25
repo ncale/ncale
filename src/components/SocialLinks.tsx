@@ -7,7 +7,7 @@ import substackIcon from "@/../public/icons/substack-icon.svg";
 export default function SocialLinks() {
   return (
     <>
-      <h2 className="text-md font-semibold mb-1 font-app-special">
+      <h2 className="text-md mb-1 font-app-special font-semibold">
         Socials...
       </h2>
       <ul className="flex flex-row">
@@ -15,7 +15,7 @@ export default function SocialLinks() {
           <a
             href="https://warpcast.com/ncale.eth"
             target="_blank"
-            className="flex items-center mr-2"
+            className="mr-2 flex items-center"
           >
             <Image
               src={fcIcon}
@@ -30,7 +30,7 @@ export default function SocialLinks() {
           <a
             href="https://www.are.na/nick-brodeur"
             target="_blank"
-            className="flex items-center mr-3"
+            className="mr-3 flex items-center"
           >
             <Image
               src={arenaIcon}
@@ -45,7 +45,7 @@ export default function SocialLinks() {
           <a
             href="https://nickbrodeur.substack.com"
             target="_blank"
-            className="flex items-center mr-2"
+            className="mr-2 flex items-center"
           >
             <Image
               src={substackIcon}
@@ -60,7 +60,7 @@ export default function SocialLinks() {
           <a
             href="https://github.com/ncale"
             target="_blank"
-            className="flex items-center mr-2"
+            className="mr-2 flex items-center"
           >
             <Image
               src={githubIcon}

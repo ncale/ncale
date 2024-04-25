@@ -24,18 +24,18 @@ export default function Project({
         <a
           href={project.projLink}
           target="_blank"
-          className="underline text-blue-600 hover:text-blue-500"
+          className="text-blue-600 underline hover:text-blue-500"
         >
           {project.projDomain}
         </a>
       </p>
-      <p className="text-sm pb-1.5 leading-4">{project.desc}</p>
+      <p className="pb-1.5 text-sm leading-4">{project.desc}</p>
       <ul className="flex">
         <li>
           <a
             href={project.projLink}
             target="_blank"
-            className="text-sm flex items-center w-fit"
+            className="flex w-fit items-center text-sm"
           >
             <Image
               src={linkIcon}
@@ -50,7 +50,7 @@ export default function Project({
           <a
             href={project.githubLink}
             target="_blank"
-            className="text-sm flex items-center w-fit"
+            className="flex w-fit items-center text-sm"
           >
             <Image
               src={githubIcon}
@@ -66,7 +66,7 @@ export default function Project({
             <a
               href={project.demoLink}
               target="_blank"
-              className="text-sm flex items-center w-fit"
+              className="flex w-fit items-center text-sm"
             >
               <Image
                 src={videoIcon}
