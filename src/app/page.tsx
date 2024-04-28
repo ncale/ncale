@@ -1,4 +1,4 @@
-import SocialLinks from "@/components/SocialLinks";
+import SocialLinks from "@/components/social-links";
 import ImageGallery from "@/components/image-gallery";
 
 export default function Home() {
@@ -42,9 +42,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="mb-5">
-        <SocialLinks />
-      </section>
+      <SocialLinks />
       <ImageGallery />
     </main>
   );

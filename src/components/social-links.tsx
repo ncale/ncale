@@ -6,10 +6,8 @@ import substackIcon from "@/../public/icons/substack-icon.svg";
 
 export default function SocialLinks() {
   return (
-    <>
-      <h2 className="text-md mb-1 font-app-special font-semibold">
-        Socials...
-      </h2>
+    <section>
+      <h2 className="font-app-special">Socials...</h2>
       <ul className="flex flex-row">
         <li>
           <a
@@ -72,6 +70,6 @@ export default function SocialLinks() {
           </a>
         </li>
       </ul>
-    </>
+    </section>
   );
 }
