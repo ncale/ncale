@@ -12,6 +12,10 @@ const config: Config = {
         paper: "hsl(40, 30%, 97.5%)",
         paperTransparent: "hsla(40, 30%, 97.5%, 80%)",
       },
+      fontFamily: {
+        "app-main": ["var(--font-main)"],
+        "app-special": ["var(--font-special)"],
+      },
     },
   },
   plugins: [],

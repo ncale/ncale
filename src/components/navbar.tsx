@@ -6,20 +6,18 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const currentPath = usePathname();
   return (
-    <header className="fixed top-0 w-11/12 mt-6 md:w-40 md:mt-12 md:h-screen bg-paperTransparent">
-      <div className="bg-rainbow-gradient p-4 pt-3 rounded flex justify-between md:flex-col md:justify-start shadow-lg">
-        <div className="font-bold w-20 md:mb-1">
-          nickbrodeur.com / ncale.eth
-        </div>
-        <ul className="flex flex-row md:flex-col">
-          {links.map(([name, path], i) => (
-            <li className="ml-2 md:ml-0 w-fit hover-grow" key={i}>
+    <header className="mb-8 font-app-special">
+      <div>
+        <ul className="[&>*]:inline">
+          {links.map(({ name, href }, i) => (
+            <li key={i}>
               <Link
-                href={path}
-                className={currentPath === path ? "font-bold" : ""}
+                href={href}
+                className={currentPath === href ? "line-through" : ""}
               >
                 {name}
               </Link>
+              {i + 1 === links.length ? "" : " | "}
             </li>
           ))}
         </ul>
@@ -28,7 +26,9 @@ export default function Navbar() {
   );
 }
 
-const links: Array<[string, `/${string}`]> = [
-  ["home", "/"],
-  ["projects", "/projects"],
+const links: NavLink[] = [
+  { name: "home", href: "/" },
+  { name: "projects", href: "/projects" },
+  { name: "writing", href: "/writing" },
 ];
+type NavLink = { name: string; href: `/${string}` };

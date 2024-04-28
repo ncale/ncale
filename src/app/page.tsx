@@ -1,74 +1,50 @@
-import Image from "next/image";
-import pic1 from "@/../public/images/profile-pic.jpeg";
-import pic2 from "@/../public/images/pic2.jpeg";
-import pic3 from "@/../public/images/pic3.jpeg";
-import SocialLinks from "@/components/SocialLinks";
-
-const imgList = [pic1, pic2, pic3];
+import SocialLinks from "@/components/social-links";
+import ImageGallery from "@/components/image-gallery";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
-      <section className="flex flex-row mb-4 md:w-[32em]">
-        <div>
-          <h1 className="text-xl font-medium mb-2">
-            Hi, I&apos;m Nick Brodeur
-          </h1>
-          <p className="text-sm leading-5 mb-3">
+    <main className="flex flex-col space-y-8">
+      <section className="space-y-5">
+        <h1 className="font-app-special text-2xl">Hi, I&apos;m Nick Brodeur</h1>
+        <div className="space-y-4">
+          <p>
             I&apos;m an amateur programmer, internet enthusiast, reader, and
             aspiring writer.
           </p>
-          <p className="text-sm leading-5 mb-3">
+          <p>
             I believe in giving people more sovereignty, and I think technology
             is one of the surest ways to do that. That means I enjoy working on
             and alongside systems that are decentralized, transparent, lasting,
             and simple.
           </p>
-          <p className="text-sm">
+          <p>
             Check out my projects if you&apos;d like to see what I&apos;ve been
-            working on lately. Also, if you&apos;d like to reach me, feel free
-            to send me an{" "}
-            <a
-              href="mailto:nicholasbrodeur@outlook.com"
-              target="_blank"
-              className="underline"
-            >
-              email
-            </a>{" "}
-            or{" "}
-            <a
-              href="https://t.me/nbrodeur"
-              target="_blank"
-              className="underline"
-            >
-              telegram DM
-            </a>
-            .
+            working on lately. Also, if you see anything you find interesting,
+            please feel free reach out.
           </p>
         </div>
-      </section>
-      <section className="mb-5">
         <SocialLinks />
       </section>
-      <section className="mb-5">
-        <h2 className="text-md font-semibold mb-1">Image Gallery</h2>
-        <div className="flex flex-row flex-wrap">
-          {imgList.map((pic, i) => (
-            <div
-              key={i}
-              className="min-w-44 max-w-44 min-h-44 h-fit relative overflow-hidden mr-2 mb-2 shadow-md"
-            >
-              <Image
-                src={pic}
-                width={500}
-                height={500}
-                className="rounded absolute left-1/2 -translate-x-1/2 min-h-44"
-                alt="A portrait"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+      <ImageGallery />
     </main>
+  );
+}
+
+function EmailLink({ children }: { children: React.ReactNode }) {
+  return (
+    <a
+      href="mailto:nicholasbrodeur@outlook.com"
+      target="_blank"
+      className="underline"
+    >
+      {children}
+    </a>
+  );
+}
+function TelegramLink({ children }: { children: React.ReactNode }) {
+  return (
+    <a href="https://t.me/nbrodeur" target="_blank" className="underline">
+      {children}
+    </a>
   );
 }

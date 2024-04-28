@@ -1,5 +1,5 @@
-import Project from "@/components/Project";
 import { projectData } from "@/data";
+import Project from "./project";
 
 export default function Home() {
   const projects = projectData.map((project, i) => (
@@ -7,13 +7,15 @@ export default function Home() {
   ));
 
   return (
-    <main className="flex min-h-screen flex-col">
-      <section className="flex flex-row mb-1">
-        <div>
-          <h1 className="text-xl font-medium mb-1.5">Projects</h1>
-        </div>
+    <main className="flex flex-col space-y-8">
+      <section className="space-y-5">
+        <h1 className="font-app-special text-2xl">Projects</h1>
+        <p>
+          This list includes current and past brands, websites, and other
+          initiatives I have built or co-founded.
+        </p>
       </section>
-      <section className="flex flex-col md:w-[32em]">{projects}</section>
+      <section className="flex flex-col space-y-8">{projects}</section>
     </main>
   );
 }

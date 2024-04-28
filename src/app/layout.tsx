@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 
-const font = Nunito({ subsets: ["latin"] });
+const font_main = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-main",
+});
+const font_special = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: "500",
+  variable: "--font-special",
+});
 
 export const metadata: Metadata = {
   title: "Nick Brodeur",
@@ -37,15 +46,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`box-border ${font.className} bg-paper`}>
-        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-start md:px-20">
+      <body
+        className={`box-border ${font_main.variable} ${font_special.variable} bg-paper font-app-main`}
+      >
+        <div className="ml-12 flex w-[32em] flex-col p-6">
           {/* Navbar */}
           <Navbar />
 
           {/* Main Content */}
-          <div className="w-11/12 p-2 pt-4 mt-24 md:w-full md:p-6 md:pt-12 md:ml-40 md:mt-0">
-            {children}
-          </div>
+          <div>{children}</div>
         </div>
       </body>
     </html>
