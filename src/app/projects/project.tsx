@@ -13,7 +13,7 @@ export default function Project({ project }: { project: ProjectData }) {
         >
           {project.title}
         </a>
-        <p className="font-app-special text-gray-400">{`${project.dateFrom} - ${project.dateTo}`}</p>
+        <p className="text-right font-app-special text-gray-400">{`${project.dateFrom} - ${project.dateTo}`}</p>
       </div>
       <p className="text-sm">{project.desc}</p>
       <ul className="flex gap-2 text-gray-400 [&>*]:duration-200 [&>*]:ease-in-out hover:[&>*]:text-gray-900">
