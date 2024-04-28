@@ -12,15 +12,15 @@ export default function Home() {
             aspiring writer.
           </p>
           <p>
-            I believe in giving people more sovereignty, and I think technology
-            is one of the surest ways to do that. That means I enjoy working on
-            and alongside systems that are decentralized, transparent, lasting,
-            and simple.
+            I believe in giving people more sovereignty, and think developing
+            better internet infrastructure is one of the surest ways to do that.
+            That means I enjoy working on and alongside decentralized systems
+            that are transparent, built-to-last, and simple.
           </p>
           <p>
             Check out my projects if you&apos;d like to see what I&apos;ve been
-            working on lately. Also, if you see anything you find interesting,
-            please feel free reach out.
+            working on lately. Also, if you find anything interesting, please
+            feel free reach out.
           </p>
         </div>
         <SocialLinks />
