@@ -1,75 +1,37 @@
-import Image from "next/image";
-import arenaIcon from "@/../public/icons/arena-mark.svg";
-import fcIcon from "@/../public/icons/fc-icon.svg";
-import githubIcon from "@/../public/icons/github-mark.svg";
-import substackIcon from "@/../public/icons/substack-icon.svg";
+import IconSubstack from "./icons/substack";
+import IconGithub from "./icons/github";
+import IconX from "./icons/x";
+import IconArena from "./icons/arena";
+import IconFarcaster from "./icons/farcaster";
 
 export default function SocialLinks() {
   return (
-    <section>
-      <h2 className="font-app-special">Socials...</h2>
-      <ul className="flex flex-row">
-        <li>
-          <a
-            href="https://warpcast.com/ncale.eth"
-            target="_blank"
-            className="mr-2 flex items-center"
-          >
-            <Image
-              src={fcIcon}
-              alt="Farcaster Icon"
-              width={18}
-              className="mr-2"
-            />
-            <span className="text-sm">Farcaster</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.are.na/nick-brodeur"
-            target="_blank"
-            className="mr-3 flex items-center"
-          >
-            <Image
-              src={arenaIcon}
-              alt="Arena Icon"
-              width={18}
-              className="mr-1.5"
-            />
-            <span className="text-sm">Are.na</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://nickbrodeur.substack.com"
-            target="_blank"
-            className="mr-2 flex items-center"
-          >
-            <Image
-              src={substackIcon}
-              alt="Substack Icon"
-              width={12}
-              className="mr-2"
-            />
-            <span className="text-sm">Substack</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/ncale"
-            target="_blank"
-            className="mr-2 flex items-center"
-          >
-            <Image
-              src={githubIcon}
-              alt="Github Icon"
-              width={16}
-              className="mr-1.5"
-            />
-            <span className="text-sm">Github</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <ul className="flex flex-row items-center gap-2 text-gray-400 [&>*]:duration-100 [&>*]:ease-in-out hover:[&>*]:text-gray-900">
+      <li className="hover:text-gray-200">
+        <a href="https://x.com/ncale.eth" target="_blank">
+          <IconX />
+        </a>
+      </li>
+      <li>
+        <a href="https://warpcast.com/ncale.eth" target="_blank">
+          <IconFarcaster />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.are.na/nick-brodeur" target="_blank">
+          <IconArena />
+        </a>
+      </li>
+      <li>
+        <a href="https://nickbrodeur.substack.com" target="_blank">
+          <IconSubstack />
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ncale" target="_blank">
+          <IconGithub />
+        </a>
+      </li>
+    </ul>
   );
 }

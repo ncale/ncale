@@ -19,13 +19,12 @@ export default function Home() {
           </p>
           <p>
             Check out my projects if you&apos;d like to see what I&apos;ve been
-            working on lately. Also, if you&apos;d like to reach me, feel free
-            to send me an <EmailLink>email</EmailLink> or{" "}
-            <TelegramLink>telegram DM</TelegramLink>.
+            working on lately. Also, if you see anything interesting, please
+            reach out.
           </p>
         </div>
+        <SocialLinks />
       </section>
-      <SocialLinks />
       <ImageGallery />
     </main>
   );
