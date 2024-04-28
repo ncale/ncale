@@ -7,7 +7,7 @@ const imageList = [pic1, pic2, pic3];
 
 export default function ImageGallery() {
   return (
-    <section>
+    <section className="space-y-5">
       <h2 className="font-app-special">Image Gallery</h2>
       <div className="flex flex-row overflow-scroll">
         {imageList.map((pic, i) => (
