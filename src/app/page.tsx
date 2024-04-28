@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col space-y-8">
       <section className="space-y-5">
-        <h1 className="font-app-special text-xl">Hi, I&apos;m Nick Brodeur</h1>
+        <h1 className="font-app-special text-2xl">Hi, I&apos;m Nick Brodeur</h1>
         <div className="space-y-4">
           <p>
             I&apos;m an amateur programmer, internet enthusiast, reader, and
@@ -19,8 +19,8 @@ export default function Home() {
           </p>
           <p>
             Check out my projects if you&apos;d like to see what I&apos;ve been
-            working on lately. Also, if you see anything interesting, please
-            reach out.
+            working on lately. Also, if you see anything you find interesting,
+            please feel free reach out.
           </p>
         </div>
         <SocialLinks />
