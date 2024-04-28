@@ -8,7 +8,7 @@ export default function SocialLinks() {
   return (
     <ul className="flex flex-row items-center gap-2 text-gray-400 [&>*]:duration-100 [&>*]:ease-in-out hover:[&>*]:text-gray-900">
       <li className="hover:text-gray-200">
-        <a href="https://x.com/ncale.eth" target="_blank">
+        <a href="https://twitter.com/nick_brodeur" target="_blank">
           <IconX />
         </a>
       </li>
