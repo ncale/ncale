@@ -54,7 +54,7 @@ export default function RootLayout({
           <Navbar />
 
           {/* Main Content */}
-          <div className="">{children}</div>
+          <div>{children}</div>
         </div>
       </body>
     </html>
