@@ -7,7 +7,7 @@ export default function Home() {
   ));
 
   return (
-    <main className="flex flex-col space-y-8">
+    <div className="flex flex-col space-y-8">
       <section className="space-y-5">
         <h1 className="font-app-special text-2xl">Projects</h1>
         <p>
@@ -16,6 +16,6 @@ export default function Home() {
         </p>
       </section>
       <section className="flex flex-col space-y-8">{projects}</section>
-    </main>
+    </div>
   );
 }

@@ -53,7 +53,7 @@ export default function RootLayout({
           {/* Navbar */}
           <Navbar />
           {/* Main Content */}
-          <div>{children}</div>
+          <main>{children}</main>
         </div>
       </body>
     </html>
