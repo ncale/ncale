@@ -3,7 +3,7 @@ import ImageGallery from "@/components/image-gallery";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-8">
+    <div className="flex flex-col space-y-8">
       <section className="space-y-5">
         <h1 className="font-app-special text-2xl">Hi, I&apos;m Nick Brodeur</h1>
         <div className="space-y-4">
@@ -26,7 +26,7 @@ export default function Home() {
         <SocialLinks />
       </section>
       <ImageGallery />
-    </main>
+    </div>
   );
 }
 
