@@ -6,8 +6,8 @@ function IconFarcaster(props: React.SVGProps<SVGSVGElement>) {
     <svg
       viewBox="0 0 1000 1000"
       fill="currentColor"
-      height="1.1em"
-      width="1.1em"
+      height="1.3em"
+      width="1.3em"
       {...props}
     >
       <rect width="1000" height="1000" rx="200" />
