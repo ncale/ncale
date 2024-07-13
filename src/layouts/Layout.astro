@@ -22,7 +22,10 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="max-w-lg mx-auto font-sans">
+    <header class="border-b text-xl mt-4 font-medium mb-4">
+      <h1>Nick Brodeur</h1>
+    </header>
     <slot />
   </body>
 </html>
