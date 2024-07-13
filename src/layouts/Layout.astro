@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/header.astro";
-import { FooterLink } from "@/components/footer-link";
+import Footer from "@/components/footer.astro";
+
 import "@/styles/globals.css";
 
 interface Props {
@@ -27,27 +28,6 @@ const { title } = Astro.props;
   <body class="max-w-lg mx-auto font-sans space-y-4">
     <Header />
     <slot />
-    <footer class="grid grid-cols-3 pt-12 pb-32">
-      <div class="*:text-xs">
-        <p>© 2024 Nick Brodeur</p>
-        <p>All rights reserved</p>
-      </div>
-      <div class="*:text-xs">
-        <p>Contact</p>
-        <FooterLink href="https://t.me/nbrodeur">Telegram</FooterLink>
-        <FooterLink href="mailto:nicholasbrodeur@outlook.com">Email</FooterLink>
-      </div>
-      <div class="*:text-xs">
-        <p>Socials</p>
-        <FooterLink href="https://twitter.com/nick_brodeur">
-          Twitter / X
-        </FooterLink>
-        <FooterLink href="https://warpcast.com/ncale.eth">Farcaster</FooterLink>
-        <FooterLink href="https://github.com/ncale">Github</FooterLink>
-        <FooterLink href="https://www.are.na/nick-brodeur/channels">
-          Are.na
-        </FooterLink>
-      </div>
-    </footer>
+    <Footer />
   </body>
 </html>
