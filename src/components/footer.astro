@@ -1,11 +1,14 @@
 ---
+import { WEBSITE_URL, LICENSE_URL } from "@/lib/constants";
 import { FooterLink } from "./footer-link";
 ---
 
 <footer class="grid grid-cols-4 pt-12 pb-32">
   <div class="*:text-xs col-span-2">
-    <p>© 2024 Nick Brodeur</p>
-    <p>Free to use under the MIT License</p>
+    <p>
+      © 2024 <a href={WEBSITE_URL} class="hover:underline">Nick Brodeur</a>
+    </p>
+    <p><a href={LICENSE_URL} class="hover:underline">MIT License</a></p>
   </div>
   <div class="*:text-xs *:w-fit">
     <p>Contact</p>
