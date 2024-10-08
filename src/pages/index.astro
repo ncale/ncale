@@ -4,71 +4,88 @@ import { Project } from "@/components/project.tsx";
 
 import {
   NAMESTONE_SDK_URL,
+  NAMESTONE_SDK_GITHUB_URL,
   JELLY_BEANS_URL,
+  JELLY_BEANS_GITHUB_URL,
   FIGHT_IQ_URL,
+  FIGHT_IQ_GITHUB_URL,
   WANNABET_NAMES_URL,
+  WANNABET_NAMES_GITHUB_URL,
   WANNABET_URL,
+  WANNABET_GITHUB_URL,
   GOVSCORE_URL,
+  GOVSCORE_GITHUB_URL,
 } from "@/lib/constants";
 ---
 
 <Layout title="">
   <main class="text-md space-y-8">
     <section class="space-y-4">
+      <p>I&apos;m an amateur programmer, entrepreneur, internet enthusiast, reader, and aspiring writer.</p>
       <p>
-        I&apos;m an amateur programmer, entrepreneur, internet enthusiast,
-        reader, and aspiring writer.
+        I believe in giving people more sovereignty, and think developing better internet infrastructure and privacy
+        tech is the surest way to do that. There&apos;s probably a long way to go, but until then, I like to spend my
+        time working on and alongside open source and decentralized projects like Ethereum and Farcaster.
       </p>
       <p>
-        I believe in giving people more sovereignty, and think developing better
-        internet infrastructure and privacy tech is the surest way to do that.
-        There&apos;s probably a long way to go, but until then, I like to spend
-        my time working on and alongside open source and decentralized projects
-        like Ethereum and Farcaster.
-      </p>
-      <p>
-        Check out my projects if you&apos;d like to see what I&apos;ve been
-        working on lately. Also, if you find anything interesting, please feel
-        free reach out.
+        Check out my projects if you&apos;d like to see what I&apos;ve been working on lately. Also, if you find
+        anything interesting, please feel free reach out.
       </p>
     </section>
-    <section class="space-y-4">
-      <h3 class="font-medium text-lg">Projects</h3>
+    <section>
+      <h3 class="font-medium text-lg mb-4">Projects</h3>
       <Project
         name="NameStone SDK"
         link={NAMESTONE_SDK_URL}
+        githubLink={NAMESTONE_SDK_GITHUB_URL}
         date="Sep. '24"
-        bio="A type-safe client for the namestone.xyz API."
+        desc="Type-safe client for the namestone.xyz API."
+        details="I wrote the V1 while building wannabet names and figured it could be helpful to others as well, so I published it to npm and shared with the namestone team."
+        client:load
       />
       <Project
         name="Jelly Beans"
         link={JELLY_BEANS_URL}
+        githubLink={JELLY_BEANS_GITHUB_URL}
         date="Sep. '24 - Current"
-        bio="An onchain prediction game."
+        desc="An onchain prediction game."
+        details="I collaborated with my brother to put this project together. I developed the smart contracts and website, he made the assets, and we collaborated on product decisions, marketing, and everything else."
+        client:load
       />
       <Project
-        name="Fight IQ"
+        name="fightIQ"
         link={FIGHT_IQ_URL}
         date="Aug. '24 - Current"
-        bio="Platform for pro MMA data, analytics, and tools."
+        desc="Platform for pro MMA data, analytics, and tools."
+        details="I put this together in my free time as there aren't many good websites for this kind of data. I revisit it every so often, and am considering which direction to take it from here. This project is closed source for now."
+        client:load
       />
       <Project
         name="WannaBet Names"
         link={WANNABET_NAMES_URL}
+        githubLink={WANNABET_NAMES_GITHUB_URL}
         date="Aug. '24"
-        bio="Claim free ENS 'wannabet.eth' subnames."
+        desc="Claim free 'wannabet.eth' ENS subnames."
+        details="I developed this website to integrate with wannabet, while also being completely resolvable *most* everywhere else (some sites don't recognize the resolver). Names are centralized, but extremely easy to claim and completely free. Read more about how off-chain ENS names work at namestone.xyz."
+        client:load
       />
       <Project
         name="WannaBet"
         link={WANNABET_URL}
+        githubLink={WANNABET_GITHUB_URL}
         date="Jun. '24 - Current"
-        bio="Peer-to-peer crypto betting app."
+        desc="Peer-to-peer crypto betting app."
+        details="I developed the smart contracts and website, and my brother and I worked together on product decisions and marketing."
+        client:load
       />
       <Project
         name="Optimism GovScore"
         link={GOVSCORE_URL}
+        githubLink={GOVSCORE_GITHUB_URL}
         date="Feb. '24 - May '24"
-        bio="Web app for discovering quality underrepresented Optimism DAO delegates."
+        desc="Web app for discovering underrepresented Optimism DAO delegates."
+        details="I developed the website and my brother and I worked together on the promotion."
+        client:load
       />
     </section>
   </main>
