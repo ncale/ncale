@@ -1,6 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Project } from "@/components/project.tsx";
+
+import {
+  NAMESTONE_SDK_URL,
+  JELLY_BEANS_URL,
+  FIGHT_IQ_URL,
+  WANNABET_NAMES_URL,
+  WANNABET_URL,
+  GOVSCORE_URL,
+} from "@/lib/constants";
 ---
 
 <Layout title="">
@@ -27,37 +36,37 @@ import { Project } from "@/components/project.tsx";
       <h3 class="font-medium text-lg">Projects</h3>
       <Project
         name="NameStone SDK"
-        link="https://www.npmjs.com/package/namestone-sdk"
+        link={NAMESTONE_SDK_URL}
         date="Sep. '24"
         bio="A type-safe client for the namestone.xyz API."
       />
       <Project
         name="Jelly Beans"
-        link="https://jellybeans.wtf/"
+        link={JELLY_BEANS_URL}
         date="Sep. '24 - Current"
         bio="An onchain prediction game."
       />
       <Project
         name="Fight IQ"
-        link="https://fightiq.io/"
+        link={FIGHT_IQ_URL}
         date="Aug. '24 - Current"
         bio="Platform for pro MMA data, analytics, and tools."
       />
       <Project
         name="WannaBet Names"
-        link="https://names.wannabet.cc/"
+        link={WANNABET_NAMES_URL}
         date="Aug. '24"
         bio="Claim free ENS 'wannabet.eth' subnames."
       />
       <Project
         name="WannaBet"
-        link="https://wannabet.cc/"
+        link={WANNABET_URL}
         date="Jun. '24 - Current"
         bio="Peer-to-peer crypto betting app."
       />
       <Project
         name="Optimism GovScore"
-        link="https://opgovscore.com/delegates"
+        link={GOVSCORE_URL}
         date="Feb. '24 - May '24"
         bio="Web app for discovering quality underrepresented Optimism DAO delegates."
       />

@@ -1,5 +1,12 @@
 ---
-import { WEBSITE_URL, LICENSE_URL } from "@/lib/constants";
+import {
+  TELEGRAM_URL,
+  EMAIL_LINK,
+  TWITTER_URL,
+  FARCASTER_URL,
+  GITHUB_URL,
+  ARENA_URL,
+} from "@/lib/constants";
 import { FooterLink } from "./footer-link";
 ---
 
@@ -10,18 +17,14 @@ import { FooterLink } from "./footer-link";
   </div>
   <div class="*:text-xs *:w-fit">
     <p>Contact</p>
-    <FooterLink href="https://t.me/nbrodeur">Telegram</FooterLink>
-    <FooterLink href="mailto:nicholasbrodeur@outlook.com">Email</FooterLink>
+    <FooterLink href={TELEGRAM_URL}>Telegram</FooterLink>
+    <FooterLink href={EMAIL_LINK}>Email</FooterLink>
   </div>
   <div class="*:text-xs *:w-fit">
     <p>Socials</p>
-    <FooterLink href="https://twitter.com/nick_brodeur">
-      Twitter / X
-    </FooterLink>
-    <FooterLink href="https://warpcast.com/ncale.eth">Farcaster</FooterLink>
-    <FooterLink href="https://github.com/ncale">Github</FooterLink>
-    <FooterLink href="https://www.are.na/nick-brodeur/channels">
-      Are.na
-    </FooterLink>
+    <FooterLink href={TWITTER_URL}> Twitter / X </FooterLink>
+    <FooterLink href={FARCASTER_URL}>Farcaster</FooterLink>
+    <FooterLink href={GITHUB_URL}>Github</FooterLink>
+    <FooterLink href={ARENA_URL}> Are.na </FooterLink>
   </div>
 </footer>
