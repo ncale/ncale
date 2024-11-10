@@ -6,25 +6,29 @@ import {
   FARCASTER_URL,
   GITHUB_URL,
   ARENA_URL,
+  LICENSE_URL,
 } from "@/lib/constants";
 import { FooterLink } from "./footer-link";
 ---
 
-<footer class="grid grid-cols-4 pt-12 pb-32">
+<footer class="grid grid-cols-4 gap-3 pt-12 pb-32">
   <div class="*:text-xs col-span-2">
     <p>© 2024 Nick Brodeur</p>
-    <p>MIT License</p>
+    <p>
+      Except where otherwise noted, the code and content of this site is licensed under the
+      <FooterLink href={LICENSE_URL}> Creative Commons Attribution 4.0 License </FooterLink>
+    </p>
   </div>
   <div class="*:text-xs *:w-fit">
     <p>Contact</p>
-    <FooterLink href={TELEGRAM_URL}>Telegram</FooterLink>
-    <FooterLink href={EMAIL_LINK}>Email</FooterLink>
+    <p><FooterLink href={TELEGRAM_URL}>Telegram</FooterLink></p>
+    <p><FooterLink href={EMAIL_LINK}>Email</FooterLink></p>
   </div>
   <div class="*:text-xs *:w-fit">
     <p>Socials</p>
-    <FooterLink href={TWITTER_URL}> Twitter / X </FooterLink>
-    <FooterLink href={FARCASTER_URL}>Farcaster</FooterLink>
-    <FooterLink href={GITHUB_URL}>Github</FooterLink>
-    <FooterLink href={ARENA_URL}> Are.na </FooterLink>
+    <p><FooterLink href={TWITTER_URL}> Twitter / X </FooterLink></p>
+    <p><FooterLink href={FARCASTER_URL}>Farcaster</FooterLink></p>
+    <p><FooterLink href={GITHUB_URL}>Github</FooterLink></p>
+    <p><FooterLink href={ARENA_URL}> Are.na </FooterLink></p>
   </div>
 </footer>
