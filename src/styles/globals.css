@@ -29,6 +29,9 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --link-unvisited: 240, 100%, 46.596%;
+    --link-visited: 271.15, 68.546%, 32.406%;
+    --link-active: 0.15041, 100%, 49.814%;
   }
 
   .dark {
@@ -65,5 +68,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .link {
+    @apply text-link-unvisited active:text-link-active visited:text-link-visited underline hover:text-blue-500;
   }
 }

@@ -1,19 +1,38 @@
 ---
+import { EMAIL_LINK } from "@/lib/constants";
 import Layout from "../layouts/Layout.astro";
+import Link from "../components/link.astro";
 ---
 
 <Layout title="">
-  <main class="text-md space-y-8 min-h-[70vh]">
-    <section class="space-y-4">
-      <p>I&apos;m an amateur programmer, entrepreneur, internet enthusiast, reader, and aspiring writer.</p>
-      <p>
-        I believe in giving people more sovereignty, and think developing better internet infrastructure and privacy
-        tech is the surest way to do that. There&apos;s probably a long way to go, but until then, I like to spend my
-        time working on and alongside open source and decentralized projects like Ethereum and Farcaster.
+  <main class="text-md min-h-[70vh]">
+    <section>
+      <p class="my-4">
+        I&apos;m a programmer, indie web enthusiast, reader, and aspiring writer. I currently work on open-source
+        projects in the ethereum ecosystem.
       </p>
-      <p>
-        Check out my projects if you&apos;d like to see what I&apos;ve been working on lately. Also, if you find
-        anything interesting, please feel free reach out.
+      A couple things I believe:
+      <ul class="pl-10 list-disc">
+        <li>
+          All humans should have the right to freedom from external control (i.e. <Link
+            href="https://www.merriam-webster.com/dictionary/sovereignty">sovereignty</Link
+          >)
+        </li>
+        <li>All humans should have the right to upward mobility</li>
+        <li>
+          Tech accelerationism is risky, but probably necessary to solve the major problems of our time, including the
+          climate crisis, adverse AI outcomes (such as alignment failure or power imbalance resulting from
+          super-intelligence), and more [<Link href="https://www.weforum.org/stories/2024/01/global-risks-report-2024/"
+            >1</Link
+          >] [<Link href="https://effectiveaccelerationism.substack.com/p/repost-effective-accelerationism">2</Link>].
+        </li>
+      </ul>
+      <p class="my-4">
+        <Link href={EMAIL_LINK}>Reach out</Link>
+      </p>
+      ...
+      <p class="my-4">
+        <Link href="/more" target="_self">More</Link>
       </p>
     </section>
   </main>

@@ -57,6 +57,11 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        link: {
+          unvisited: "hsl(var(--link-unvisited))",
+          visited: "hsl(var(--link-visited))",
+          active: "hsl(var(--link-active))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
