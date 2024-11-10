@@ -18,11 +18,10 @@ const { title } = Astro.props;
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500&display=swap" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="max-w-lg mx-auto font-sans space-y-4 px-4 pt-4 lg:p-0">
+  <body class="max-w-lg font-sans mx-auto space-y-4 px-4 pt-4 lg:p-0">
     <Header />
     <slot />
     <Footer />
