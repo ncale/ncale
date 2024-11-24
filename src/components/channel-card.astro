@@ -1,4 +1,6 @@
 ---
+import { getDaysAgo } from '@/lib/utils';
+
 interface Props {
   title: string;
   updatedAt: string;
@@ -11,12 +13,10 @@ const { title, updatedAt, description, length, slug } = Astro.props;
 ---
 
 <div class="rounded-xl border bg-card text-card-foreground shadow px-3 py-2">
-    <h3 class="font-medium">{title}</h3>
-    <p class="text-xs text-muted-foreground italic">
-      updated {new Date(updatedAt).toLocaleDateString()}
-    </p>
-    {description && (
-      <p class="text-sm text-muted-foreground mt-1">{description}</p>
+  <h3 class="font-medium">{title}</h3>
+  <p class="text-xs text-muted-foreground italic">updated {getDaysAgo(updatedAt)}</p>
+  {description && (
+    <p class="text-sm text-muted-foreground mt-1">{description}</p>
     )}
     <p class="text-sm text-muted-foreground mt-1">{length} blocks</p>
     <a
