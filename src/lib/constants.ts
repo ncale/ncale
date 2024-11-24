@@ -1,3 +1,7 @@
+/** API Links */
+
+export const ARENA_API_BASE = "https://api.are.na/v2";
+
 /** Links */
 
 // Header / Footer / General
