@@ -1,11 +1,17 @@
 ---
+// Constants
+import { ARENA_URL } from "@/lib/constants";
+
+// Components
 import Link from "@/components/link.astro";
 import Layout from "@/layouts/Layout.astro";
 import ChannelCard from "@/components/channel-card.astro";
 
+// Lib
 import { getUserChannels } from "@/lib/arena";
 import { config } from "@/lib/config";
 
+// Get user channels
 const userChannels = await getUserChannels(config.ARENA_USER_SLUG);
 userChannels.channels.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
 ---
@@ -13,43 +19,49 @@ userChannels.channels.sort((a, b) => new Date(b.updated_at).getTime() - new Date
 <Layout title="Brodeur">
   <main class="text-md min-h-[70vh]">
     <section>
-      <p class="my-4">
-        I like to collect things on <Link href="https://www.are.na/nick-brodeur" target="_blank">Are.na</Link>. Here are some of my collections.
-      </p>
+      <p class="my-4">I have a number of interests and hobbies which I share here.</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
-        {userChannels.channels.map((channel) => (
-          <ChannelCard
-            title={channel.title}
-            updatedAt={channel.updated_at}
-            description={channel.metadata.description}
-            length={channel.length}
-            slug={channel.slug}
-          />
-        ))}
-      </div>
+      <article class="mb-8">
+        <p class="my-4">
+          I like to collect things on <Link href={ARENA_URL} target="_blank">Are.na</Link>. See below.
+        </p>
 
-      <p class="my-4">I have a number of interests and hobbies, a few of which I hope to share here.</p>
-      Some of my favorite books, in no particular order
-      <ul class="mb-4 pl-10 list-disc">
-        <li>My Struggle 1-6, Karl Ove Knausgaard (2009-18)</li>
-        <li>Trainspotting, Irvine Welsh (1993)</li>
-        <li>Brave New World, Aldous Huxley (1932)</li>
-        <li>Outer Dark, Cormac McCarthy (1968)</li>
-        <li>more soon</li>
-      </ul>
-      Some of my favorite movies, in no particular order
-      <ul class="mb-4 pl-10 list-disc">
-        <li>Her, Spike Jonze (2013)</li>
-        <li>Sound of Metal, Darius Marder (2019)</li>
-        <li>Spirited Away, Hayao Miyazaki (2001)</li>
-        <li>The Thing, John Carpenter (1982)</li>
-        <li>Dazed and Confused, Richard Linklater (1993)</li>
-        <li>Eyes Wide Shut, Stanley Kubrick (1999)</li>
-        <li>Blade Runner 2049, Denis Villeneuve (2017)</li>
-        <li>more soon</li>
-      </ul>
-      ...
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {
+            userChannels.channels.map((channel) => (
+              <ChannelCard
+                title={channel.title}
+                updatedAt={channel.updated_at}
+                description={channel.metadata.description}
+                length={channel.length}
+                slug={channel.slug}
+              />
+            ))
+          }
+        </div>
+      </article>
+
+      <article class="mb-8">
+        favorite books
+        <ul class="mb-4 pl-10 list-disc">
+          <li>My Struggle 1-6, Karl Ove Knausgaard (2009-18)</li>
+          <li>Trainspotting, Irvine Welsh (1993)</li>
+          <li>Brave New World, Aldous Huxley (1932)</li>
+          <li>Outer Dark, Cormac McCarthy (1968)</li>
+        </ul>
+
+        favorite movies
+        <ul class="mb-4 pl-10 list-disc">
+          <li>Her, Spike Jonze (2013)</li>
+          <li>Sound of Metal, Darius Marder (2019)</li>
+          <li>Spirited Away, Hayao Miyazaki (2001)</li>
+          <li>The Thing, John Carpenter (1982)</li>
+          <li>Dazed and Confused, Richard Linklater (1993)</li>
+          <li>Eyes Wide Shut, Stanley Kubrick (1999)</li>
+          <li>Blade Runner 2049, Denis Villeneuve (2017)</li>
+        </ul>
+      </article>
+      …
       <p class="my-4">
         <Link href="/" target="_self">Home</Link>
       </p>
