@@ -1,11 +1,34 @@
 ---
 import Link from "@/components/link.astro";
 import Layout from "@/layouts/Layout.astro";
+import ChannelCard from "@/components/channel-card.astro";
+
+import { getUserChannels } from "@/lib/arena";
+import { config } from "@/lib/config";
+
+const userChannels = await getUserChannels(config.ARENA_USER_SLUG);
+userChannels.channels.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
 ---
 
 <Layout title="Brodeur">
   <main class="text-md min-h-[70vh]">
     <section>
+      <p class="my-4">
+        I like to collect things on <Link href="https://www.are.na/nick-brodeur" target="_blank">Are.na</Link>. Here are some of my collections.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
+        {userChannels.channels.map((channel) => (
+          <ChannelCard
+            title={channel.title}
+            updatedAt={channel.updated_at}
+            description={channel.metadata.description}
+            length={channel.length}
+            slug={channel.slug}
+          />
+        ))}
+      </div>
+
       <p class="my-4">I have a number of interests and hobbies, a few of which I hope to share here.</p>
       Some of my favorite books, in no particular order
       <ul class="mb-4 pl-10 list-disc">

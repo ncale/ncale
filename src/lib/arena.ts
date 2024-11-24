@@ -4,8 +4,8 @@ import { config } from "@/lib/config";
 export interface ArenaBlock {
   id: number;
   title: string;
-  updated_at: Date;
-  created_at: Date;
+  updated_at: string; // Date;
+  created_at: string; // Date;
   state: string;
   comment_count: number;
   generated_title: string;
@@ -29,8 +29,8 @@ export interface ArenaBlock {
 export interface ArenaChannel {
   id: number;
   title: string;
-  created_at: Date;
-  updated_at: Date;
+  created_at: string; // Date;
+  updated_at: string; // Date;
   published: boolean;
   open: boolean;
   collaboration: boolean;
@@ -41,6 +41,9 @@ export interface ArenaChannel {
   user_id: number;
   class: string;
   base_class: string;
+  metadata: {
+    description: string;
+  };
   user: {
     id: number;
     slug: string;
@@ -57,8 +60,20 @@ export interface ArenaChannel {
   contents: ArenaBlock[];
 }
 
-export async function getChannel(slug: string): Promise<ArenaChannel> {
-  const response = await fetch(`${ARENA_API_BASE}/channels/${slug}?per=100`, {
+export interface ArenaUserChannels {
+  id: number;
+  base_class: string;
+  class: string;
+  length: number;
+  total_pages: number;
+  current_page: number;
+  per: number;
+  channel_title: null;
+  channels: ArenaChannel[];
+}
+
+export async function getUserChannels(userSlug: string): Promise<ArenaUserChannels> {
+  const response = await fetch(`${ARENA_API_BASE}/users/${userSlug}/channels?per=100`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${config.ARENA_PERSONAL_ACCESS_TOKEN}`,
