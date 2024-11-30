@@ -70,6 +70,6 @@
     @apply bg-background text-foreground;
   }
   .link {
-    @apply text-link-unvisited active:text-link-active visited:text-link-visited underline hover:text-blue-500;
+    @apply inline-block rounded hover:border-2 border-yellow-200 hover:px-2 text-gray-300 duration-150 ease-in-out active:text-link-active;
   }
 }

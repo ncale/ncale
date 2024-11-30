@@ -1,0 +1,98 @@
+---
+// Constants
+import { ARENA_URL } from "@/lib/constants";
+
+// Components
+import Link from "@/components/links.astro";
+import Layout from "@/layouts/Layout.astro";
+import ChannelCard from "@/components/channel-card.astro";
+
+// Lib
+import { getUserChannels } from "@/lib/arena";
+import { config } from "@/lib/config";
+import { H2 } from "@/components/headings";
+
+// Get user channels
+// const userChannels = await getUserChannels(config.ARENA_USER_SLUG);
+// userChannels.channels.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
+---
+
+<Layout title="Brodeur">
+  <main class="text-md min-h-[70vh]">
+    <section>
+      <p class="my-4">I have a number of interests and hobbies which I share here.</p>
+
+      <article class="mb-8">
+        <p class="my-4">
+          I maintain a few collections of things I find cool on <Link href={ARENA_URL} target="_blank">Are.na</Link>.
+        </p>
+
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {
+            userChannels.channels.map((channel) => (
+              <ChannelCard
+                title={channel.title}
+                updatedAt={channel.updated_at}
+                description={channel.metadata.description}
+                length={channel.length}
+                slug={channel.slug}
+              />
+            ))
+          }
+        </div> -->
+      </article>
+
+      <br />
+
+      <article>
+        <H2>Inspiration </H2>
+        <p>
+          My biggest inspiration for creating this website was Gwern Branwen, who is an independent researcher and
+          creator of the website gwern.net. I first learned about Gwern on twitter from his appearance on the Dwarkesh
+          podcast, where he was broght on since he predicted AI scaling would continue as far back as 2020, two years
+          before the release of chatGPT. Outside of his influence on my worldview strictly as a result of his arguments,
+          he also has the character of a modern day Borges-showing a clear evolution of David Foster Wallace's genious
+          while being more of a genuine child of the internet. His love of encyclopeadic references comes, not from
+          academia, but from being a wikipedia editor. He would probably deny it, but if there is to be a great writer
+          of our generation, it would be Gwern. If only he liked fiction.
+        </p>
+      </article>
+
+      <br />
+
+      <article class="mb-8">
+        <H2>Favorite Media</H2>
+        <p class="my-2">
+          My favorite book genres are autofiction and literature, and while I occasionally read non-fiction books in
+          bursts, I prefer to read it in shorter form essays and blog posts. I have fewer preferences when it comes to
+          visual media, but enjoy ephemeral, thought provoking stuff the most.
+        </p>
+        <p class="text-xs font-bold">Books</p>
+        <ul class="mb-4 pl-10 list-disc text-xs">
+          <li>My Struggle 1-6, Karl Ove Knausgaard (2009-18)</li>
+          <li>Trainspotting, Irvine Welsh (1993)</li>
+          <li>Brave New World, Aldous Huxley (1932)</li>
+          <li>Outer Dark, Cormac McCarthy (1968)</li>
+        </ul>
+        <p class="text-xs font-bold">Essays</p>
+        <ul class="mb-4 pl-10 list-disc text-xs">
+          <li></li>
+        </ul>
+        <p class="mb-2"></p>
+        <p class="text-xs font-bold">Movies</p>
+        <ul class="mb-4 pl-10 list-disc text-xs">
+          <li>Her, Spike Jonze (2013)</li>
+          <li>Sound of Metal, Darius Marder (2019)</li>
+          <li>Spirited Away, Hayao Miyazaki (2001)</li>
+          <li>The Thing, John Carpenter (1982)</li>
+          <li>Blade Runner 2049, Denis Villeneuve (2017)</li>
+        </ul>
+        <p class="text-xs font-bold">Television</p>
+        <ul class="mb-4 pl-10 list-disc text-xs">
+          <li>True Detective S1</li>
+          <li>Death Note</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</Layout>

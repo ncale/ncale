@@ -1,0 +1,20 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+const metadata = {
+  title: "Drugs",
+  author: "Ben",
+  description: "A list of drugs and their effects",
+};
+---
+
+<Layout title={metadata.title}>
+  <main>
+    <article>
+      <p>{metadata.title}</p>
+      <p>Written by: {metadata.author}</p>
+      <p>{metadata.description}</p>
+      <h1></h1>
+    </article>
+  </main>
+</Layout>
