@@ -1,11 +1,13 @@
 ---
 import Link from "@/components/links.astro";
-import Layout from "@/layouts/Layout.astro";
+import PageFooter from "@/components/page-footer.astro";
+import Layout from "@/layouts/layout.astro";
 ---
 
 <Layout title="Oops">
-  <main class="text-md min-h-[70vh]">
+  <section>
     <p>Uh oh. There&apos;s no resource found at this path</p>
     <p><Link href="/" target="_self">Go back home</Link></p>
-  </main>
+  </section>
+  <PageFooter />
 </Layout>

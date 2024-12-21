@@ -1,36 +1,36 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+import Layout from "@/layouts/layout.astro";
 import { H2 } from "@/components/ui/headings";
+import PageFooter from "@/components/page-footer.astro";
 ---
 
 <Layout title="Brodeur">
-  <main class="text-md min-h-[70vh]">
-    <section>
-      <!-- About PLACEHOLDER -->
+  <section>
+    <!-- About PLACEHOLDER -->
 
-      <!-- Influences -->
-      <article>
-        <H2>Influences & Inspiration</H2>
-        <p>
-          My biggest inspiration for creating this website was Gwern Branwen, who is an independent researcher and
-          creator of the website gwern.net. I first learned about Gwern on twitter from his appearance on the Dwarkesh
-          podcast, where he was brought on since he predicted AI scaling would continue as far back as 2020, two years
-          before the release of chatGPT. Outside of his influence on my worldview strictly as a result of his arguments,
-          he also has the character of a modern day Borges-showing a clear evolution of David Foster Wallace's genious
-          while being more of a genuine child of the internet. His love of encyclopeadic references comes, not from
-          academia, but from being a wikipedia editor. He would probably deny it, but if there is to be a great writer
-          of our generation, it would be Gwern. If only he liked fiction.
-        </p>
-        <p>
-          I've also been heavily influenced by my favorite writers, each in important but different ways. This list is
-          wide ranging, including but not limited to Karl Knausgaard, Nietsche, Aldous Huxley, David Foster Wallace,
-          Borges, Tolstoy, Cormac McCarthy, and more.
-        </p>
-      </article>
+    <!-- Influences -->
+    <article>
+      <H2>Influences & Inspiration</H2>
+      <p>
+        My biggest inspiration for creating this website was Gwern Branwen, who is an independent researcher and creator
+        of the website gwern.net. I first learned about Gwern on twitter from his appearance on the Dwarkesh podcast,
+        where he was brought on since he predicted AI scaling would continue as far back as 2020, two years before the
+        release of chatGPT. Outside of his influence on my worldview strictly as a result of his arguments, he also has
+        the character of a modern day Borges-showing a clear evolution of David Foster Wallace's genious while being
+        more of a genuine child of the internet. His love of encyclopeadic references comes, not from academia, but from
+        being a wikipedia editor. He would probably deny it, but if there is to be a great writer of our generation, it
+        would be Gwern. If only he liked fiction.
+      </p>
+      <p>
+        I've also been heavily influenced by my favorite writers, each in important but different ways. This list is
+        wide ranging, including but not limited to Karl Knausgaard, Nietsche, Aldous Huxley, David Foster Wallace,
+        Borges, Tolstoy, Cormac McCarthy, and more.
+      </p>
+    </article>
 
-      <br />
+    <!-- <br /> -->
 
-      <!-- <article class="mb-8">
+    <!-- <article class="mb-8">
         <H2>More Reading</H2>
         <p class="my-2">
           Books are abundantly recommended, time-intensive, and rarely read. Instead, I opted to make this easy and only
@@ -38,9 +38,9 @@ import { H2 } from "@/components/ui/headings";
         </p>
       </article> -->
 
-      <br />
+    <!-- <br /> -->
 
-      <!-- <article class="mb-8">
+    <!-- <article class="mb-8">
         <H2>Are.na Collections</H2>
         <p class="my-4">
           I maintain a few collections of things I find cool on <Link href={ARENA_URL} target="_blank">Are.na</Link>.
@@ -48,7 +48,7 @@ import { H2 } from "@/components/ui/headings";
           magazines, hardware companies, or blogs.
         </p> -->
 
-      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+    <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {
             userChannels.channels.map((channel) => (
               <ChannelCard
@@ -61,7 +61,7 @@ import { H2 } from "@/components/ui/headings";
             ))
           }
         </div> -->
-      <!-- </article> -->
-    </section>
-  </main>
+    <!-- </article> -->
+  </section>
+  <PageFooter />
 </Layout>

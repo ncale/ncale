@@ -1,5 +1,6 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+import PageFooter from "@/components/page-footer.astro";
+import Layout from "@/layouts/layout.astro";
 
 const metadata = {
   title: "Drugs",
@@ -9,12 +10,13 @@ const metadata = {
 ---
 
 <Layout title={metadata.title}>
-  <main>
+  <section>
     <article>
       <p>{metadata.title}</p>
       <p>Written by: {metadata.author}</p>
       <p>{metadata.description}</p>
       <h1></h1>
     </article>
-  </main>
+  </section>
+  <PageFooter />
 </Layout>

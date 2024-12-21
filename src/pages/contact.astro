@@ -1,12 +1,14 @@
 ---
 import Link from "@/components/links.astro";
-import Layout from "@/layouts/Layout.astro";
+import PageFooter from "@/components/page-footer.astro";
+import Layout from "@/layouts/layout.astro";
 import { EMAIL, EMAIL_LINK, TELEGRAM, TELEGRAM_URL } from "@/lib/constants";
 ---
 
 <Layout title="Contact">
-  <main>
+  <section>
     <h1>Contact</h1>
     <p>email: <Link href={EMAIL_LINK}>{EMAIL}</Link></p>
-  </main>
+  </section>
+  <PageFooter />
 </Layout>
