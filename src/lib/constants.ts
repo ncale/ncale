@@ -1,3 +1,7 @@
+/** General */
+
+export const LARGE_SCREEN_WIDTH = 5120;
+
 /** API Links */
 
 export const ARENA_API_BASE = "https://api.are.na/v2";

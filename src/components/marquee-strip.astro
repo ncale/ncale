@@ -1,0 +1,27 @@
+---
+import { LARGE_SCREEN_WIDTH } from "@/lib/constants";
+
+const MARQUEE_CHARACTER_WIDTH = 14;
+const chanceOfSpace = 1 / 6;
+
+const generateRandomLetter = () => {
+  // About 1 in 6 chance to return a space
+  if (Math.random() < chanceOfSpace) return " ";
+  return String.fromCharCode(97 + Math.floor(Math.random() * 26));
+};
+
+const generateRandomString = () => {
+  const numChars = LARGE_SCREEN_WIDTH / MARQUEE_CHARACTER_WIDTH;
+  return Array.from({ length: numChars * 2 }, generateRandomLetter).join("");
+};
+
+const string = generateRandomString();
+---
+
+<section class="border-b">
+  <div class="overflow-x-hidden whitespace-nowrap py-1 font-mono relative text-sm" aria-label="Decorative marquee text">
+    <p class="text-gray-400/25 cursor-default animate-marquee select-none" role="presentation">
+      {string}... you reached the end :)
+    </p>
+  </div>
+</section>

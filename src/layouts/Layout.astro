@@ -1,7 +1,7 @@
 ---
 import Header from "@/components/header.astro";
 import Footer from "@/components/footer.astro";
-
+import MarqueeStrip from "@/components/marquee-strip.astro";
 import "@/styles/globals.css";
 
 interface Props {
@@ -21,9 +21,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="max-w-xl dark decoration-sky-300 font-sans mx-auto space-y-4 px-4 pt-4 lg:p-0">
+  <body class="dark bg-background border-gray-200 min-h-screen flex flex-col">
     <Header />
-    <slot />
+    <MarqueeStrip />
+    <main class="max-w-xl w-full pt-4 *:px-4 border-x mx-auto flex-1">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

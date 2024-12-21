@@ -35,7 +35,7 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 5.7%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -70,6 +70,6 @@
     @apply bg-background text-foreground;
   }
   .link {
-    @apply inline-block rounded hover:border-2 border-yellow-200 hover:px-2 text-gray-300 duration-150 ease-in-out active:text-link-active;
+    @apply inline-block rounded hover:border-2 text-blue-300 border-yellow-200 hover:px-2 underline hover:bg-yellow-800/50 duration-150 ease-in-out active:text-link-active;
   }
 }
