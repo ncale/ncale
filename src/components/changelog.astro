@@ -1,0 +1,43 @@
+---
+interface ChangelogEntry {
+  date: string;
+  changes: string[];
+}
+
+const changelog: ChangelogEntry[] = [
+  {
+    date: "2024-03-21",
+    changes: ["Initial site launch", "Added home page with basic information", "Set up project structure and styling"],
+  },
+];
+---
+
+<div class="mt-16 border-t pt-8">
+  <div class="flex items-center gap-2 text-lg font-semibold mb-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 3v12m6-12v12m6-12v12M6 19h12"></path>
+    </svg>
+    Changelog
+  </div>
+  <div class="space-y-6">
+    {
+      changelog.map((entry) => (
+        <div class="space-y-2">
+          <div class="text-sm text-gray-500">{entry.date}</div>
+          <ul class="list-disc list-inside space-y-1 text-sm pl-4">
+            {entry.changes.map((change) => (
+              <li class="text-gray-700">{change}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</div>

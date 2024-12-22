@@ -7,8 +7,16 @@ import { EMAIL, EMAIL_LINK, TELEGRAM, TELEGRAM_URL } from "@/lib/constants";
 
 <Layout title="Contact">
   <section>
+    <button
+      onclick="history.back()"
+      class="w-full h-full text-sm text-muted-foreground hover:bg-muted-foreground hover:text-muted transition-colors px-4 py-0.5"
+    >
+      back
+    </button>
+  </section>
+  <section class="p-4 border-t">
     <h1>Contact</h1>
     <p>email: <Link href={EMAIL_LINK}>{EMAIL}</Link></p>
   </section>
-  <PageFooter />
+  <PageFooter lastUpdated={null} />
 </Layout>

@@ -1,0 +1,47 @@
+---
+import PageFooter from "@/components/page-footer.astro";
+import Layout from "@/layouts/layout.astro";
+import { isNull, parseDate, formatDate } from "@/lib/utils";
+
+// TODO: Add prop types
+// interface Props {}
+
+const { frontmatter } = Astro.props;
+
+const { title, description, author, category, draft } = frontmatter;
+
+// Build check for markdown metadata
+if (isNull(title) || isNull(description) || isNull(author) || isNull(category) || isNull(draft)) {
+  throw new Error("Required parameter is missing");
+}
+
+const { dateStarted: dateStartedString, lastUpdated: lastUpdatedString } = frontmatter;
+
+const dateStarted = dateStartedString ? parseDate(dateStartedString) : null;
+const lastUpdated = lastUpdatedString ? parseDate(lastUpdatedString) : null;
+---
+
+<Layout {title}>
+  <section>
+    <button
+      onclick="history.back()"
+      class="w-full h-full text-sm text-muted-foreground hover:bg-muted-foreground hover:text-muted transition-colors px-4 py-0.5"
+    >
+      back
+    </button>
+  </section>
+  <header class="border-y p-4 space-y-2">
+    <h1>
+      {title}
+    </h1>
+    <p class="text-sm text-muted-foreground mb-2">{description}</p>
+    <div>
+      <p class="text-sm text-muted-foreground">Started: {dateStarted ? formatDate(dateStarted) : "-"}</p>
+      <p class="text-sm text-muted-foreground">Last updated: {lastUpdated ? formatDate(lastUpdated) : "-"}</p>
+    </div>
+  </header>
+  <article class="p-4 prose prose-invert">
+    <slot />
+  </article>
+  <PageFooter {lastUpdated} />
+</Layout>

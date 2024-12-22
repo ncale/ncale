@@ -1,9 +1,18 @@
 ---
+import { formatDate } from "@/lib/utils";
 
+interface Props {
+  lastUpdated: Date | null;
+}
+
+const { lastUpdated } = Astro.props;
 ---
 
-<footer class="border-t mt-8 pb-8">
-  <div class="max-w-xl mx-auto px-4 py-4">
-    <a href="/" class="text-sm text-muted-foreground hover:text-foreground transition-colors"> ← home </a>
+<footer class="border-t mt-8 p-4 mb-12">
+  <div class="flex justify-between">
+    <button onclick="history.back()" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
+      ← back
+    </button>
+    {lastUpdated && <span class="text-sm text-muted-foreground">Last updated: {formatDate(lastUpdated)}</span>}
   </div>
 </footer>

@@ -1,17 +1,29 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Link from "../components/links.astro";
-import { H2 } from "@/components/ui/headings";
+
+type Post = {
+  url: string;
+  frontmatter: {
+    title: string;
+    description: string;
+    author: string;
+    category: string;
+    draft: boolean;
+  };
+};
+
+const posts = Object.values(import.meta.glob<Post>("./misc/*.md", { eager: true }));
 ---
 
-<Layout title="">
-  <main class="text-md min-h-[70vh]">
+<Layout title="Home">
+  <main class="p-4">
     <section class="mb-6">
       <p class="mb-2">
-        I&apos;m a programmer, indie web enthusiast, and part-time writer. I studied business in college and shifted
-        into web development a little after a year of starting in consulting, so now I write typescript for startups and
-        work on small projects in the ethereum ecosystem. I spend the rest of my productive time learning about AI,
-        crypto, and software.
+        I&apos;m a programmer, indie web enthusiast, and part-time writer. I started my career in business consulting,
+        and shifted into web development around a year ago. Now I write typescript for startups and work on small
+        projects in the ethereum ecosystem. I spend the rest of my productive time learning about AI, crypto, and
+        software.
       </p>
       <p>
         My motivation for creating this site is to archive my personality and preferences as a means of imprinting
@@ -24,10 +36,17 @@ import { H2 } from "@/components/ui/headings";
         <Link href="/contact" target="_self">Reach out</Link> · <Link href="/about" target="_self">About</Link>
       </p>
     </section>
-    <section>
-      <H2>Writing</H2>
-      <p><a href="/misc/future-of-engineering" class="link">The Future of Engineering</a></p>
-      <p><a href="/misc/economic-mobility" class="link">Economic mobility</a></p>
+    <section class="mb-12">
+      <h2>Writing</h2>
+      {
+        posts.map((post) => (
+          <p>
+            <a href={post.url} class="link">
+              {post.frontmatter.title}
+            </a>
+          </p>
+        ))
+      }
     </section>
   </main>
 </Layout>
