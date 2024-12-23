@@ -1,5 +1,4 @@
 ---
-import Link from "@/components/links.astro";
 import PageFooter from "@/components/page-footer.astro";
 import Layout from "@/layouts/layout.astro";
 ---
@@ -7,7 +6,7 @@ import Layout from "@/layouts/layout.astro";
 <Layout title="Oops">
   <section>
     <p>Uh oh. There&apos;s no resource found at this path</p>
-    <p><Link href="/" target="_self">Go back home</Link></p>
+    <p><a href="/" class="link">Go back home</a></p>
   </section>
   <PageFooter lastUpdated={null} />
 </Layout>

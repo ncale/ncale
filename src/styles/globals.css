@@ -70,7 +70,7 @@
     @apply bg-background text-foreground;
   }
   .link {
-    @apply inline-block rounded hover:border-2 text-blue-300 border-yellow-200 hover:px-2 underline hover:bg-yellow-800/50 duration-150 ease-in-out active:text-link-active;
+    @apply inline-block rounded hover:outline outline-2 text-blue-300 outline-yellow-200 hover:px-1.5 underline hover:bg-yellow-800/50 duration-150 ease-in-out active:text-link-active;
   }
   .badge {
     @apply inline-block rounded-full px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-800;

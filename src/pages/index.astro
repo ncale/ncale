@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/layout.astro";
-import Link from "../components/links.astro";
 
 type Post = {
   url: string;
@@ -17,13 +16,13 @@ const posts = Object.values(import.meta.glob<Post>("./misc/*.md", { eager: true 
 ---
 
 <Layout title="Home">
-  <main class="p-4">
-    <section class="mb-6">
-      <p class="mb-2">
-        I&apos;m a programmer, indie web enthusiast, and part-time writer. I started my career in business consulting,
-        and shifted into web development around a year ago. Now I write typescript for startups and work on small
-        projects in the ethereum ecosystem. I spend the rest of my productive time learning about AI, crypto, and
-        software.
+  <section class="border-b p-4">
+    <article class="prose prose-invert">
+      <p>I&apos;m a programmer, indie web enthusiast, and part-time writer.</p>
+      <p>
+        I started my career in business consulting and shifted into web development a year-ish ago. Now I write
+        typescript for startups, work on small projects in the ethereum ecosystem, and spend the rest of my productive
+        time learning about tech / AI / crypto / software.
       </p>
       <p>
         My motivation for creating this site is to archive my personality and preferences as a means of imprinting
@@ -32,21 +31,21 @@ const posts = Object.values(import.meta.glob<Post>("./misc/*.md", { eager: true 
         competition, but I can document how I think and feel about it, and maybe even get something I want by voicing
         it.
       </p>
-      <p class="my-2">
-        <Link href="/contact" target="_self">Reach out</Link> · <Link href="/about" target="_self">About</Link>
-      </p>
-    </section>
-    <section class="mb-12">
-      <h2>Writing</h2>
-      {
-        posts.map((post) => (
-          <p>
-            <a href={post.url} class="link">
-              {post.frontmatter.title}
-            </a>
-          </p>
-        ))
-      }
-    </section>
-  </main>
+    </article>
+    <br />
+    <p><a href="/contact" class="link">Reach out</a></p>
+    <p><a href="/about" class="link">About</a></p>
+  </section>
+  <section class="p-4 mb-12">
+    <h2>Drafts</h2>
+    {
+      posts.map((post) => (
+        <p>
+          <a href={post.url} class="link">
+            {post.frontmatter.title}
+          </a>
+        </p>
+      ))
+    }
+  </section>
 </Layout>

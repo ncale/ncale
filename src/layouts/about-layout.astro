@@ -1,10 +1,9 @@
 ---
 import PageFooter from "@/components/page-footer.astro";
-import Layout from "@/layouts/layout.astro";
-import { EMAIL, EMAIL_LINK, TELEGRAM, TELEGRAM_URL } from "@/lib/constants";
+import Layout from "./layout.astro";
 ---
 
-<Layout title="Contact">
+<Layout title="About">
   <section>
     <button
       onclick="history.back()"
@@ -13,9 +12,8 @@ import { EMAIL, EMAIL_LINK, TELEGRAM, TELEGRAM_URL } from "@/lib/constants";
       back
     </button>
   </section>
-  <section class="p-4 border-t">
-    <h1>Contact</h1>
-    <p>email: <a href={EMAIL_LINK} target="_blank" class="link">{EMAIL}</a></p>
-  </section>
+  <article class="p-4 border-t prose prose-invert">
+    <slot />
+  </article>
   <PageFooter lastUpdated={null} />
 </Layout>
