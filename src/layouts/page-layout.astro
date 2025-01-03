@@ -40,7 +40,7 @@ const lastUpdated = lastUpdatedString ? parseDate(lastUpdatedString) : null;
       <p class="text-sm text-muted-foreground">Last updated: {lastUpdated ? formatDate(lastUpdated) : "-"}</p>
     </div>
   </header>
-  <article class="p-4 prose prose-invert">
+  <article class="p-4 prose prose-invert break-words">
     <slot />
   </article>
   <PageFooter {lastUpdated} />

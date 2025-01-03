@@ -19,9 +19,9 @@ The goal of this page is to create a practical guide to improving recollection a
 
 #### Resources
 
-[1] https://en.wikipedia.org/wiki/Learning
-[2] https://pcl.sitehost.iu.edu/rgoldsto/courses/dunloskyimprovinglearning.pdf
-[3] https://adrvantage.com/wp-content/uploads/2023/02/Mindset-The-New-Psychology-of-Success-Dweck.pdf
+- [1] https://en.wikipedia.org/wiki/Learning
+- [2] https://pcl.sitehost.iu.edu/rgoldsto/courses/dunloskyimprovinglearning.pdf
+- [3] https://adrvantage.com/wp-content/uploads/2023/02/Mindset-The-New-Psychology-of-Success-Dweck.pdf
 
 ### Growth Mindset & Metacognition
 

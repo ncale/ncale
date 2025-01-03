@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/layout.astro";
+import * as intro from "../articles/intro.md";
 
 type Post = {
   url: string;
@@ -18,19 +19,7 @@ const posts = Object.values(import.meta.glob<Post>("./misc/*.md", { eager: true 
 <Layout title="Home">
   <section class="border-b p-4">
     <article class="prose prose-invert">
-      <p>I&apos;m a programmer, indie web enthusiast, and part-time writer.</p>
-      <p>
-        I started my career in business consulting and shifted into web development a year-ish ago. Now I write
-        typescript for startups, work on small projects in the ethereum ecosystem, and spend the rest of my productive
-        time learning about tech / AI / crypto / software.
-      </p>
-      <p>
-        My motivation for creating this site is to archive my personality and preferences as a means of imprinting
-        myself, in whatever small way, into the future of the world. AI is starting to, and will continue to make
-        intelligence cheap, and execution on intelligence reliable and fast. I don't see myself providing much
-        competition, but I can document how I think and feel about it, and maybe even get something I want by voicing
-        it.
-      </p>
+      <intro.Content />
     </article>
     <br />
     <p><a href="/contact" class="link">Reach out</a></p>
