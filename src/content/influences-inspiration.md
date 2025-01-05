@@ -1,10 +1,10 @@
 ---
-layout: "../layouts/about-layout.astro"
-title: "About"
-description: "About me"
+title: "Influences & Inspiration"
+description: "Influences & Inspiration"
 author: "Nick Brodeur"
-dateStarted: "" # format: YYYY-MM-DD
-lastUpdated: "" # format: YYYY-MM-DD
+version: "0.1"
+dateStarted: "2024-12-26" # format: YYYY-MM-DD
+lastUpdated: "2024-12-26" # format: YYYY-MM-DD
 image: {
 	src: "",
 	alt: ""

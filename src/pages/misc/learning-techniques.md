@@ -1,10 +1,11 @@
 ---
 layout: "../../layouts/page-layout.astro"
-title: "Techniques for Learning More Effectively"
-description: "Techniques for accelerating the learning of new concepts"
+title: "Improved Learning Techniques"
+description: "Techniques for accelerating learning of new concepts"
 author: "Nick Brodeur"
-dateStarted: "" # format: YYYY-MM-DD
-lastUpdated: "" # format: YYYY-MM-DD
+version: "0.2"
+dateStarted: "2024-12-26" # format: YYYY-MM-DD
+lastUpdated: "2025-01-05" # format: YYYY-MM-DD
 image: {
 	src: "",
 	alt: ""
@@ -13,15 +14,7 @@ category: ""
 draft: true
 ---
 
-[DRAFT]
-
 The goal of this page is to create a practical guide to improving recollection and retention of learned concepts.
-
-#### Resources
-
-- [1] https://en.wikipedia.org/wiki/Learning
-- [2] https://pcl.sitehost.iu.edu/rgoldsto/courses/dunloskyimprovinglearning.pdf
-- [3] https://adrvantage.com/wp-content/uploads/2023/02/Mindset-The-New-Psychology-of-Success-Dweck.pdf
 
 ### Growth Mindset & Metacognition
 
@@ -32,7 +25,9 @@ Learning, as an active method of molding neural pathways, requires an effortful 
 
 Lacking either can lead to a lack in perseverance required to make meaningful changes.
 
-> Metacognition: awareness or analysis of one's own learning or thinking processes [4](https://www.merriam-webster.com/dictionary/metacognition)
+> Metacognition: awareness or analysis of one's own learning or thinking processes. [^metacog]
+
+[^metacog]: Merriam-Webster. (2024). [Metacognition](https://www.merriam-webster.com/dictionary/metacognition).
 
 This boils down to metacognitive strategies—monitoring your learning—being important in helping you make adjustments in your learning process (noticing your deficiencies, what is and isn't working, etc.).
 
@@ -55,3 +50,9 @@ Mix topics or problem types within a single study session. This disrupts the min
 ### Chunking & Mnemonics
 
 Grouping data into meaningful chunks frees working memory (Miller, 1956). Acronyms, images, and other mnemonic devices anchor the knowledge (Atkinson & Shiffrin, 1968). Break large concepts into digestible segments for deeper comprehension.
+
+#### Bibliography
+
+- https://en.wikipedia.org/wiki/Learning
+- https://pcl.sitehost.iu.edu/rgoldsto/courses/dunloskyimprovinglearning.pdf
+- https://adrvantage.com/wp-content/uploads/2023/02/Mindset-The-New-Psychology-of-Success-Dweck.pdf

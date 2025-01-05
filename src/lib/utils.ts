@@ -20,10 +20,15 @@ export function parseDate(dateString: string): Date {
 
 export function formatDate(date: Date): string {
   return date.toLocaleDateString("en-US", {
+    month: "short",
     year: "numeric",
-    month: "long",
-    day: "numeric",
   });
+}
+
+export function getDaysAgoString(date: Date): string {
+  const diffTime = Math.abs(new Date().getTime() - date.getTime());
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return `${diffDays} ${diffDays === 1 ? "day" : "days"} ago`;
 }
 
 export function getDaysAgo(date: string | Date): string {

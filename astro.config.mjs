@@ -11,4 +11,11 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  markdown: {
+    remarkRehype: {
+      footnoteLabel: "Footnotes",
+      footnoteLabelProperties: { className: ["sr-only"] },
+      footnoteBackContent: "↩",
+    },
+  },
 });

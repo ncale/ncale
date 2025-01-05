@@ -1,0 +1,23 @@
+---
+import PageFooter from "@/components/page-footer.astro";
+import Layout from "@/layouts/layout.astro";
+
+import * as influences from "@/content/influences-inspiration.md";
+import * as writing from "@/content/writing-resources.md";
+---
+
+<Layout title="About">
+  <section>
+    <button
+      onclick="history.back()"
+      class="w-full h-full text-sm text-muted-foreground hover:bg-muted-foreground hover:text-muted transition-colors px-4 py-0.5"
+    >
+      back
+    </button>
+  </section>
+  <article class="p-4 border-t prose prose-invert">
+    <influences.Content />
+    <writing.Content />
+  </article>
+  <PageFooter lastUpdated={null} />
+</Layout>

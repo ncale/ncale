@@ -78,6 +78,12 @@
 }
 
 @layer base {
+  .prose a {
+    @apply text-blue-300 hover:text-blue-400;
+  }
+}
+
+@layer base {
   h1 {
     @apply text-3xl font-bold;
   }

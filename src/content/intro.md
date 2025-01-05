@@ -9,9 +9,9 @@ category: "misc"
 draft: true
 ---
 
-I'm a programmer, [indie web](https://indieweb.org/) enthusiast, and part-time writer.
+I'm a programmer, [indie web](https://indieweb.org/) enthusiast, and novice writer.
 
-I started my career in business consulting and shifted into web development a year-ish ago. Now I write [typescript](https://en.wikipedia.org/wiki/TypeScript) for startups, work on small projects in the ethereum ecosystem, and spend the rest of my productive time learning about tech / AI / crypto / software.
+I started my career in business consulting and shifted into web development a year-ish ago due to a yearning to build things. Now I'm a full-stack [typescript](https://en.wikipedia.org/wiki/TypeScript) dev for a web3 startup, work on small projects in the ethereum ecosystem, and spend the rest of my productive time learning about tech / AI / crypto / software.
 
 <!--
 My motivation for creating this site is to

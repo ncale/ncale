@@ -15,7 +15,7 @@ if (isNull(title) || isNull(description) || isNull(author) || isNull(category) |
   throw new Error("Required parameter is missing");
 }
 
-const { dateStarted: dateStartedString, lastUpdated: lastUpdatedString } = frontmatter;
+const { dateStarted: dateStartedString, lastUpdated: lastUpdatedString, version } = frontmatter;
 
 const dateStarted = dateStartedString ? parseDate(dateStartedString) : null;
 const lastUpdated = lastUpdatedString ? parseDate(lastUpdatedString) : null;
@@ -35,6 +35,7 @@ const lastUpdated = lastUpdatedString ? parseDate(lastUpdatedString) : null;
       {title}
     </h1>
     <p class="text-sm text-muted-foreground mb-2">{description}</p>
+    <p class="text-sm text-muted-foreground">v{version}</p>
     <div>
       <p class="text-sm text-muted-foreground">Started: {dateStarted ? formatDate(dateStarted) : "-"}</p>
       <p class="text-sm text-muted-foreground">Last updated: {lastUpdated ? formatDate(lastUpdated) : "-"}</p>
