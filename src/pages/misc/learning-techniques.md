@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/page-layout.astro"
+layout: "@/layouts/page-layout.astro"
 title: "Improved Learning Techniques"
 description: "Techniques for accelerating learning of new concepts"
 author: "Nick Brodeur"
