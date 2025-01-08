@@ -10,9 +10,7 @@ const { lastUpdated } = Astro.props;
 
 <footer class="border-t mt-8 p-4 mb-12">
   <div class="flex justify-between">
-    <button onclick="history.back()" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-      ← back
-    </button>
+    <a href="/" class="text-sm text-muted-foreground hover:text-foreground transition-colors"> ← home </a>
     {lastUpdated && <span class="text-sm text-muted-foreground">Last updated: {formatDate(lastUpdated)}</span>}
   </div>
 </footer>
