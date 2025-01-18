@@ -128,7 +128,11 @@
 
   /* Prose */
   .prose-primary {
-    @apply prose prose-gray prose-a:text-blue-600 hover:prose-a:text-yellow-500 active:prose-a:text-red-600 break-words;
+    @apply prose prose-lg prose-gray prose-li:my-1 prose-a:text-blue-600 hover:prose-a:text-yellow-500 active:prose-a:text-red-600 break-words;
+  }
+
+  .prose-primary > :first-child {
+    @apply mt-0;
   }
 
   :root[data-theme="dark"] .prose-primary {
