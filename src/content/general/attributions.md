@@ -14,5 +14,5 @@ draft: true
 
 ## Attributions
 
-- [Flexoki](https://www.flexoki.com/) color palette
+- [Flexoki](https://www.flexoki.com/) for color theme
 - [Young Serif](https://fontsource.org/) font

@@ -1,5 +1,4 @@
 ---
-layout: "@/layouts/page-layout.astro"
 shortTitle: "Mindful Web Surfing"
 title: "Eating your information greens: How I surf the web mindfully"
 description: ""

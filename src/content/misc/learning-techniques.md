@@ -1,5 +1,4 @@
 ---
-layout: "@/layouts/page-layout.astro"
 shortTitle: "Learning More Faster"
 title: "Increasing Neuroplasticity Through Learning Techniques, i.e. Learning More Faster"
 description: "Techniques for accelerating learning of new concepts"

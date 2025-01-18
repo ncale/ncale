@@ -9,6 +9,8 @@ import { isNull, parseDate, formatDate } from "@/lib/utils";
 
 const { frontmatter } = Astro.props;
 
+console.log(frontmatter);
+
 const { title, description, author, category, draft } = frontmatter;
 
 // Build check for markdown metadata

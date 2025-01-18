@@ -1,0 +1,47 @@
+---
+import HomePanel from "@/components/home-panel.astro";
+import Layout from "@/layouts/layout.astro";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+// TODO: add a schema for posts
+type MiscPost = CollectionEntry<"misc">;
+
+const posts: MiscPost[] = await getCollection("misc");
+
+const sorted = posts
+  .sort((a: MiscPost, b: MiscPost) => new Date(b.data.dateStarted).getTime() + new Date(a.data.dateStarted).getTime())
+  .slice(0, 16);
+---
+
+<Layout title="Misc">
+  <HomePanel />
+  <section class="p-4 border-b">
+    <h1>Timeline</h1>
+    <p class="text-muted-foreground">
+      All my ideas start here as small blurbs, and may be left that way, or may be expanded into fuller length posts
+      over time.
+    </p>
+    <ol class="p-4 pl-6 list-decimal">
+      {
+        sorted.map((post) => {
+          return <li>{post.data.shortTitle}</li>;
+        })
+      }
+    </ol>
+  </section>
+  {
+    sorted.map(async (post: MiscPost) => {
+      const { Content } = await render(post);
+      return (
+        <section class="p-4 border-b">
+          <h2 class="mb-2">{post.data.title}</h2>
+          <p class="text-muted-foreground">Started {new Date(post.data.dateStarted).toLocaleDateString()}</p>
+          <p class="text-muted-foreground">Last updated {new Date(post.data.lastUpdated).toLocaleDateString()}</p>
+          <article class="prose-primary">
+            <Content />
+          </article>
+        </section>
+      );
+    })
+  }
+</Layout>
