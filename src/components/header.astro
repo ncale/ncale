@@ -1,12 +1,37 @@
 ---
-
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 ---
 
 <header class="border-b">
-  <div class="max-w-3xl py-3 px-4 flex items-end justify-between mx-auto">
+  <div class="max-w-3xl py-3 px-4 text-foreground flex items-center justify-between mx-auto">
     <h1 class="font-medium text-xl">
       <a href="/">Nick Brodeur</a>
     </h1>
-    <div></div>
+
+    <button id="theme-toggle" aria-label="Toggle theme" class="p-2 text-muted-foreground hover:text-foreground">
+      <SunIcon className="sun" />
+      <MoonIcon className="moon" />
+    </button>
   </div>
 </header>
+
+<script>
+  const getTheme = () => {
+    const theme = localStorage?.getItem("theme");
+    if (typeof localStorage !== "undefined" && theme) {
+      return theme;
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  };
+
+  document.documentElement.setAttribute("data-theme", getTheme());
+
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const newTheme = getTheme() === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  });
+</script>

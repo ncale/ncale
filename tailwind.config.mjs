@@ -2,7 +2,6 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -20,6 +19,15 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        elegance: ["Pixelated Elegance", "sans-serif"],
+        giphurs: ["Giphurs", "sans-serif"],
+        milkman: ["Milkman", "sans-serif"],
+        bastleur: ["Basteleur Moonlight", "sans-serif"],
+        bastleurBold: ["Basteleur Bold", "sans-serif"],
+        youngSerif: ["Young Serif", "serif"],
+        career: ["Career", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -53,11 +61,6 @@ module.exports = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        link: {
-          unvisited: "hsl(var(--link-unvisited))",
-          visited: "hsl(var(--link-visited))",
-          active: "hsl(var(--link-active))",
         },
       },
       borderRadius: {

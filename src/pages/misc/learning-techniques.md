@@ -1,11 +1,15 @@
 ---
 layout: "@/layouts/page-layout.astro"
-title: "Improved Learning Techniques"
+shortTitle: "Learning More Faster"
+title: "Increasing Neuroplasticity Through Learning Techniques, i.e. Learning More Faster"
 description: "Techniques for accelerating learning of new concepts"
 author: "Nick Brodeur"
-version: "0.2"
+version: "0.3"
 dateStarted: "2024-12-26" # format: YYYY-MM-DD
-lastUpdated: "2025-01-05" # format: YYYY-MM-DD
+lastUpdated: "2025-01-16" # format: YYYY-MM-DD
+v0.1: "2024-12-26" # format: YYYY-MM-DD
+v0.2: "2025-01-05" # format: YYYY-MM-DD
+v0.3: "2025-01-16 - update title" # format: YYYY-MM-DD
 image: {
 	src: "",
 	alt: ""

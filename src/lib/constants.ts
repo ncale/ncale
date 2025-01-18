@@ -11,7 +11,7 @@ export const ARENA_API_BASE = "https://api.are.na/v2";
 // Header / Footer / General
 
 export const WEBSITE_URL = "https://nickbrodeur.com";
-export const LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/deed.en";
+export const LICENSE_URL = "https://creativecommons.org/licenses/by/4.0";
 
 export const TELEGRAM = "nbrodeur";
 export const TELEGRAM_URL = `https://t.me/${TELEGRAM}`;

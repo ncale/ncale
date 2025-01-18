@@ -19,8 +19,11 @@ const string = generateRandomString();
 ---
 
 <section class="border-b">
-  <div class="overflow-x-hidden whitespace-nowrap py-1 font-mono relative text-sm" aria-label="Decorative marquee text">
-    <p class="text-gray-400/25 cursor-default animate-marquee select-none" role="presentation">
+  <div
+    class="bg-muted text-muted-foreground overflow-x-hidden whitespace-nowrap py-1 font-mono relative text-sm"
+    aria-label="Decorative marquee text"
+  >
+    <p class="cursor-default animate-marquee select-none" role="presentation">
       {string}... you reached the end :)
     </p>
   </div>

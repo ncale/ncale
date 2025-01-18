@@ -29,11 +29,11 @@ const changelog: ChangelogEntry[] = [
   <div class="space-y-6">
     {
       changelog.map((entry) => (
-        <div class="space-y-2">
-          <div class="text-sm text-gray-500">{entry.date}</div>
+        <div class="space-y-2 text-muted-foreground">
+          <div class="text-sm">{entry.date}</div>
           <ul class="list-disc list-inside space-y-1 text-sm pl-4">
             {entry.changes.map((change) => (
-              <li class="text-gray-700">{change}</li>
+              <li>{change}</li>
             ))}
           </ul>
         </div>

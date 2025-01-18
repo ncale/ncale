@@ -1,24 +1,33 @@
 ---
 import Layout from "@/layouts/layout.astro";
 import * as intro from "@/content/general/intro.md";
-
+import { getDaysAgo } from "@/lib/utils";
 type Post = {
   url: string;
   frontmatter: {
     title: string;
+    shortTitle: string;
     description: string;
     author: string;
+    dateStarted: string;
+    lastUpdated: string;
     category: string;
     draft: boolean;
   };
 };
 
 const posts = Object.values(import.meta.glob<Post>("./misc/*.md", { eager: true }));
+const formatted = posts.map((post) => ({
+  ...post.frontmatter,
+  url: post.url,
+  lastUpdated: new Date(post.frontmatter.lastUpdated),
+}));
+const sorted = formatted.sort((a, b) => b.lastUpdated.getTime() - a.lastUpdated.getTime());
 ---
 
 <Layout title="Home">
   <section class="border-b p-4">
-    <article class="prose prose-invert">
+    <article class="prose-primary">
       <intro.Content />
     </article>
     <br />
@@ -26,15 +35,18 @@ const posts = Object.values(import.meta.glob<Post>("./misc/*.md", { eager: true 
     <p><a href="/about" class="link">About</a></p>
   </section>
   <section class="p-4 mb-12">
-    <h2>Drafts</h2>
+    <h2>Timeline</h2>
     {
-      posts.map((post) => (
-        <p>
-          <a href={post.url} class="link">
-            {post.frontmatter.title}
-          </a>
-        </p>
-      ))
+      sorted.map((post) => {
+        return (
+          <p>
+            <a href={post.url} class="link">
+              {post.shortTitle}
+            </a>
+            <span class="text-muted-foreground ml-2">{getDaysAgo(post.lastUpdated)}</span>
+          </p>
+        );
+      })
     }
   </section>
 </Layout>

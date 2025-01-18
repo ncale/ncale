@@ -1,4 +1,5 @@
 ---
+import HomePanel from "@/components/home-panel.astro";
 import PageFooter from "@/components/page-footer.astro";
 import Layout from "@/layouts/layout.astro";
 import { isNull, parseDate, formatDate } from "@/lib/utils";
@@ -22,15 +23,8 @@ const lastUpdated = lastUpdatedString ? parseDate(lastUpdatedString) : null;
 ---
 
 <Layout {title}>
-  <section>
-    <a
-      href="/"
-      class="inline-block w-full h-full text-center text-sm text-muted-foreground hover:bg-muted-foreground hover:text-muted transition-colors px-4 py-0.5"
-    >
-      home
-    </a>
-  </section>
-  <header class="border-y p-4 space-y-2">
+  <HomePanel />
+  <header class="border-b p-4 space-y-2">
     <h1>
       {title}
     </h1>
@@ -41,8 +35,10 @@ const lastUpdated = lastUpdatedString ? parseDate(lastUpdatedString) : null;
       <p class="text-sm text-muted-foreground">Last updated: {lastUpdated ? formatDate(lastUpdated) : "-"}</p>
     </div>
   </header>
-  <article class="p-4 prose prose-invert break-words">
-    <slot />
-  </article>
+  <section class="p-4">
+    <article class="prose-primary">
+      <slot />
+    </article>
+  </section>
   <PageFooter {lastUpdated} />
 </Layout>

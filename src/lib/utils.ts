@@ -25,14 +25,11 @@ export function formatDate(date: Date): string {
   });
 }
 
-export function getDaysAgoString(date: Date): string {
-  const diffTime = Math.abs(new Date().getTime() - date.getTime());
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  return `${diffDays} ${diffDays === 1 ? "day" : "days"} ago`;
-}
+export function getDaysAgo(date: Date | string): string {
+  const dateObj = date instanceof Date ? date : new Date(date);
+  if (isNaN(dateObj.getTime())) throw new Error("Invalid date provided");
 
-export function getDaysAgo(date: string | Date): string {
-  const diffTime = Math.abs(new Date().getTime() - new Date(date).getTime());
+  const diffTime = Math.abs(new Date().getTime() - dateObj.getTime());
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
   return `${diffDays} ${diffDays === 1 ? "day" : "days"} ago`;
 }
