@@ -11,7 +11,6 @@
 - [ ] Remove headings styles (?) or find better implementation
 - [ ] Add all flexoki colors
 - [ ] external links icon on the right
-- [ ] external links open in new tab
 - [ ] remove icons
 - [ ] remove react and other packages
 - [ ] python scripts for improving writing with OAI api
@@ -38,3 +37,4 @@
 - [x] Organize globals.css
 - [x] Have one muted grey color for secondary text so everything is consistent;
 - [x] add a timeline page that just has lastest posts in order
+- [x] external links open in new tab

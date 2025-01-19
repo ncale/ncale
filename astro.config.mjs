@@ -3,6 +3,8 @@ import react from "@astrojs/react";
 
 import tailwind from "@astrojs/tailwind";
 
+import rehypeExternalLinks from "rehype-external-links";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -17,5 +19,6 @@ export default defineConfig({
       footnoteLabelProperties: { className: ["sr-only"] },
       footnoteBackContent: "↩",
     },
+    rehypePlugins: [[rehypeExternalLinks, { target: "_blank" }]],
   },
 });
