@@ -1,3 +1,11 @@
 <section class="w-full aspect-[5/1] p-2 border-b">
-  <img src="/images/banner-3.webp" alt="About Banner" class="w-full h-full object-cover" />
+  <script>
+    const randomNum = Math.floor(Math.random() * 14) + 1;
+    document.addEventListener("DOMContentLoaded", () => {
+      const bannerImg = document.getElementById("bannerImg") as HTMLImageElement;
+      if (!bannerImg) return;
+      bannerImg.src = `/images/banner-${randomNum}.webp`;
+    });
+  </script>
+  <img id="bannerImg" alt="About Banner" class="w-full h-full object-cover" />
 </section>
