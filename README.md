@@ -31,6 +31,7 @@
 - [ ] add build checks to ensure all posts are valid
 - [ ] add dedicated 'posts.ts' file for getting posts
 - [ ] specify posts as 'essay' 'blog' or 'misc' and use for organization
+- [ ] fix font FOUC
 
 # Done:
 

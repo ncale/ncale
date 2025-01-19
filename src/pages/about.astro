@@ -6,10 +6,12 @@ import * as influences from "@/content/general/influences-inspiration.md";
 import * as writing from "@/content/general/writing-resources.md";
 import * as attributions from "@/content/general/attributions.md";
 import HomePanel from "@/components/home-panel.astro";
+import BannerPanel from "@/components/banner-panel.astro";
 ---
 
 <Layout title="About">
   <HomePanel />
+  <BannerPanel />
   <section class="p-4">
     <article class="prose-primary">
       <influences.Content />

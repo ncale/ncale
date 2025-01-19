@@ -6,6 +6,8 @@ author: "Nick Brodeur"
 v0.1: "2025-01-03 - mockup" # format: YYYY-MM-DD
 v0.2: "2025-01-08 - wording" # format: YYYY-MM-DD
 v0.3: "2025-01-16 - wording" # format: YYYY-MM-DD
+v0.4: "2025-01-18 - wording" # format: YYYY-MM-DD
+
 image: { src: "", alt: "" }
 category: "misc"
 draft: true
@@ -13,7 +15,7 @@ draft: true
 
 I'm a programmer, [indie web](https://indieweb.org/) enthusiast, and novice writer.
 
-I started my career in business consulting and shifted into web development a year-ish ago due to wanting to build things. Now I'm a full-stack [typescript](https://en.wikipedia.org/wiki/TypeScript) dev for a [web3](https://en.wikipedia.org/wiki/Web3) startup, program things I find interesting, work on small projects in the ethereum ecosystem, and spend the rest of my productive time learning about tech / AI / crypto / software.
+I started my career in business consulting and shifted into web development a year-ish ago due to wanting more experience building things. Now I'm a full-stack [typescript](https://en.wikipedia.org/wiki/TypeScript) dev for a [web3](https://en.wikipedia.org/wiki/Web3) startup, program things I find interesting, work on small projects in the ethereum ecosystem, and spend the rest of my productive time learning about tech / AI / crypto / software.
 
 <!--
 My motivation for creating this site is to
