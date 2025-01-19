@@ -11,7 +11,6 @@
 - [ ] Remove headings styles (?) or find better implementation
 - [ ] Add all flexoki colors
 - [ ] external links icon on the right
-- [ ] remove icons
 - [ ] remove react and other packages
 - [ ] python scripts for improving writing with OAI api
 - [ ] python scripts for generating images with stable diffusion
@@ -31,6 +30,7 @@
 - [ ] add dedicated 'posts.ts' file for getting posts
 - [ ] specify posts as 'essay' 'blog' or 'misc' and use for organization
 - [ ] fix font FOUC
+- [ ] remove shadcn
 
 # Done:
 
@@ -38,3 +38,4 @@
 - [x] Have one muted grey color for secondary text so everything is consistent;
 - [x] add a timeline page that just has lastest posts in order
 - [x] external links open in new tab
+- [x] remove icons
