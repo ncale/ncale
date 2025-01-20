@@ -21,7 +21,8 @@ FLUX.1 [schnell],banner-10.webp,renaissance period acid trip
 FLUX.1 [schnell],banner-11.webp,renaissance period acid trip
 FLUX.1 [schnell],banner-12.webp,renaissance painting ancient town hall political fight
 FLUX.1 [schnell],banner-13.webp,nighthawks Hopper in retro video game style
-FLUX.1 [schnell],banner-14.webp,nighthawks Hopper in retro video game style
 
 FLUX.1 [dev],square-1.webp,renaissance period acid trip,260886825
-FLUX.1 [dev],square-2.webp,renaissance period acid trip,260886825
+FLUX.1 [dev],square-2.webp,renaissance period acid trip,
+FLUX.1 [schnell],square-3.webp,renaissance period acid trip brave new world,
+FLUX.1 [schnell],square-3.webp,renaissance period acid trip brave new world,
