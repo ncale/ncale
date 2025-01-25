@@ -3,6 +3,9 @@
 export const LARGE_SCREEN_WIDTH = 5120;
 export const NUM_BANNER_IMAGES = 20; // TODO: this can be programmatically counted
 
+export const HOTKEY_DARK_MODE = "d";
+export const HOTKEY_BANNER_CHANGE = "r";
+
 /** API Links */
 
 export const ARENA_API_BASE = "https://api.are.na/v2";

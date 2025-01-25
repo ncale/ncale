@@ -1,5 +1,6 @@
 ---
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { HOTKEY_DARK_MODE } from "@/lib/constants";
 ---
 
 <header class="border-b">
@@ -8,14 +9,19 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
       <a href="/">Nick Brodeur</a>
     </h1>
 
-    <button id="theme-toggle" aria-label="Toggle theme" class="p-2 text-muted-foreground hover:text-foreground">
+    <button
+      id="theme-toggle"
+      aria-label="Toggle theme"
+      class="p-2 text-muted-foreground hover:text-foreground"
+      title={`'${HOTKEY_DARK_MODE}' to toggle dark mode`}
+    >
       <SunIcon className="sun" />
       <MoonIcon className="moon" />
     </button>
   </div>
 </header>
 
-<script>
+<script define:vars={{ HOTKEY_DARK_MODE }}>
   const getTheme = () => {
     const theme = localStorage?.getItem("theme");
     if (typeof localStorage !== "undefined" && theme) {
@@ -40,7 +46,7 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
   document.addEventListener("keydown", (e) => {
     if (
       !keyPressed &&
-      e.key.toLowerCase() === "d" &&
+      e.key.toLowerCase() === HOTKEY_DARK_MODE &&
       !e.ctrlKey &&
       !e.metaKey &&
       !e.altKey &&
@@ -55,7 +61,7 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
   });
 
   document.addEventListener("keyup", (e) => {
-    if (e.key.toLowerCase() === "d") {
+    if (e.key.toLowerCase() === HOTKEY_DARK_MODE) {
       keyPressed = false;
     }
   });

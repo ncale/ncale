@@ -1,9 +1,9 @@
 ---
-import { NUM_BANNER_IMAGES } from "@/lib/constants";
+import { NUM_BANNER_IMAGES, HOTKEY_BANNER_CHANGE } from "@/lib/constants";
 ---
 
 <section class="w-full aspect-[5/1] p-2 border-b">
-  <script define:vars={{ NUM_BANNER_IMAGES }}>
+  <script define:vars={{ NUM_BANNER_IMAGES, HOTKEY_BANNER_CHANGE }}>
     const getBannerPath = (num) => `/images/banner-${num}.webp`;
     const getRandomBannerPath = () => getBannerPath(Math.floor(Math.random() * NUM_BANNER_IMAGES) + 1);
 
@@ -21,7 +21,7 @@ import { NUM_BANNER_IMAGES } from "@/lib/constants";
     document.addEventListener("keydown", (e) => {
       if (
         !keyPressed &&
-        e.key.toLowerCase() === "f" &&
+        e.key.toLowerCase() === HOTKEY_BANNER_CHANGE &&
         !e.ctrlKey &&
         !e.metaKey &&
         !e.altKey &&
@@ -35,10 +35,15 @@ import { NUM_BANNER_IMAGES } from "@/lib/constants";
     });
 
     document.addEventListener("keyup", (e) => {
-      if (e.key.toLowerCase() === "f") {
+      if (e.key.toLowerCase() === HOTKEY_BANNER_CHANGE) {
         keyPressed = false;
       }
     });
   </script>
-  <img id="bannerImg" alt="About Banner" class="w-full h-full object-cover" />
+  <img
+    id="bannerImg"
+    alt="About Banner"
+    class="w-full h-full object-cover"
+    title={`'${HOTKEY_BANNER_CHANGE}' for a random banner`}
+  />
 </section>
