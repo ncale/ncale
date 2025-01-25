@@ -1,8 +1,12 @@
+---
+import { NUM_BANNER_IMAGES } from "@/lib/constants";
+---
+
 <section class="w-full aspect-[5/1] p-2 border-b">
-  <script>
-    const randomNum = Math.floor(Math.random() * 14) + 1;
+  <script define:vars={{ NUM_BANNER_IMAGES }}>
+    const randomNum = Math.floor(Math.random() * NUM_BANNER_IMAGES) + 1;
     document.addEventListener("DOMContentLoaded", () => {
-      const bannerImg = document.getElementById("bannerImg") as HTMLImageElement;
+      const bannerImg = document.getElementById("bannerImg");
       if (!bannerImg) return;
       bannerImg.src = `/images/banner-${randomNum}.webp`;
     });

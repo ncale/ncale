@@ -1,6 +1,7 @@
 /** General */
 
 export const LARGE_SCREEN_WIDTH = 5120;
+export const NUM_BANNER_IMAGES = 20; // TODO: this can be programmatically counted
 
 /** API Links */
 

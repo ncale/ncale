@@ -21,6 +21,13 @@ FLUX.1 [schnell],banner-10.webp,renaissance period acid trip
 FLUX.1 [schnell],banner-11.webp,renaissance period acid trip
 FLUX.1 [schnell],banner-12.webp,renaissance painting ancient town hall political fight
 FLUX.1 [schnell],banner-13.webp,nighthawks Hopper in retro video game style
+FLUX.1 [schnell],banner-14.webp,andy warhol style jungle
+FLUX.1 [schnell],banner-15.webp,bob ross painting mushroom aliens
+FLUX.1 [schnell],banner-16.webp,bob ross painting mushrooms aliens
+FLUX.1 [schnell],banner-17.webp,mountains ps1 playstation psx gamecube game, pixelated glitch art
+FLUX.1 [schnell],banner-18.webp,mountains ps1 playstation psx gamecube game, pixelated glitch art
+FLUX.1 [schnell],banner-19.webp,ocean ps1 playstation psx gamecube game, pixelated glitch art
+FLUX.1 [schnell],banner-20.webp,spaceship dogfight ps1 playstation psx gamecube game\, pixelated glitch art
 
 FLUX.1 [dev],square-1.webp,renaissance period acid trip,260886825
 FLUX.1 [dev],square-2.webp,renaissance period acid trip,
