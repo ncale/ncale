@@ -34,4 +34,29 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
   });
+
+  // Add keyboard shortcut for theme toggle
+  let keyPressed = false;
+  document.addEventListener("keydown", (e) => {
+    if (
+      !keyPressed &&
+      e.key.toLowerCase() === "d" &&
+      !e.ctrlKey &&
+      !e.metaKey &&
+      !e.altKey &&
+      document.activeElement &&
+      document.activeElement.tagName !== "INPUT" &&
+      document.activeElement.tagName !== "TEXTAREA"
+    ) {
+      keyPressed = true;
+      const themeToggle = document.getElementById("theme-toggle");
+      themeToggle?.click();
+    }
+  });
+
+  document.addEventListener("keyup", (e) => {
+    if (e.key.toLowerCase() === "d") {
+      keyPressed = false;
+    }
+  });
 </script>
