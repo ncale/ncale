@@ -4,11 +4,40 @@ import { NUM_BANNER_IMAGES } from "@/lib/constants";
 
 <section class="w-full aspect-[5/1] p-2 border-b">
   <script define:vars={{ NUM_BANNER_IMAGES }}>
-    const randomNum = Math.floor(Math.random() * NUM_BANNER_IMAGES) + 1;
-    document.addEventListener("DOMContentLoaded", () => {
+    const getBannerPath = (num) => `/images/banner-${num}.webp`;
+    const getRandomBannerPath = () => getBannerPath(Math.floor(Math.random() * NUM_BANNER_IMAGES) + 1);
+
+    function getNewBanner() {
       const bannerImg = document.getElementById("bannerImg");
       if (!bannerImg) return;
-      bannerImg.src = `/images/banner-${randomNum}.webp`;
+      bannerImg.src = getRandomBannerPath();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      getNewBanner();
+    });
+
+    let keyPressed = false;
+    document.addEventListener("keydown", (e) => {
+      if (
+        !keyPressed &&
+        e.key.toLowerCase() === "f" &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.altKey &&
+        document.activeElement &&
+        document.activeElement.tagName !== "INPUT" &&
+        document.activeElement.tagName !== "TEXTAREA"
+      ) {
+        keyPressed = true;
+        getNewBanner();
+      }
+    });
+
+    document.addEventListener("keyup", (e) => {
+      if (e.key.toLowerCase() === "f") {
+        keyPressed = false;
+      }
     });
   </script>
   <img id="bannerImg" alt="About Banner" class="w-full h-full object-cover" />
