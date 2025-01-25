@@ -10,11 +10,11 @@ export function cn(...inputs: ClassValue[]) {
 
 /** Invariant checks */
 
-export function isNull<T>(value: T | null): value is null {
+export function isNullish<T>(value: T | null): value is null {
   return value === null || value === undefined;
 }
 
-export function isNotNull<T>(value: T | null): value is T {
+export function isNotNullish<T>(value: T | null): value is T {
   return value !== null && value !== undefined;
 }
 

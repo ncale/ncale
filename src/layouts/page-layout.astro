@@ -2,7 +2,7 @@
 import HomePanel from "@/components/home-panel.astro";
 import PageFooter from "@/components/page-footer.astro";
 import Layout from "@/layouts/layout.astro";
-import { isNull, parseDate, formatDate } from "@/lib/utils";
+import { isNullish, parseDate, formatDate } from "@/lib/utils";
 
 // TODO: Add prop types
 // interface Props {}
@@ -14,7 +14,7 @@ console.log(frontmatter);
 const { title, description, author, category, draft } = frontmatter;
 
 // Build check for markdown metadata
-if (isNull(title) || isNull(description) || isNull(author) || isNull(category) || isNull(draft)) {
+if (isNullish(title) || isNullish(description) || isNullish(author) || isNullish(category) || isNullish(draft)) {
   throw new Error("Required parameter is missing");
 }
 
