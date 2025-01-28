@@ -1,11 +1,11 @@
 # Priority:
 
+- [ ] Add google analytics
 - [ ] add utility function for getting all posts
 
 # Backlog:
 
 - [ ] add link icons to headers and make them clickable
-- [ ] Fix top margin in prose sections
 - [ ] Select one typeface and remove the rest
 - [ ] Make footnotes smaller
 - [ ] Remove headings styles (?) or find better implementation
@@ -31,9 +31,11 @@
 - [ ] specify posts as 'essay' 'blog' or 'misc' and use for organization
 - [ ] fix font FOUC
 - [ ] remove shadcn
+- [ ] open graph metadata
 
 # Done:
 
+- [x] Fix top margin in prose sections
 - [x] Organize globals.css
 - [x] Have one muted grey color for secondary text so everything is consistent;
 - [x] add a timeline page that just has lastest posts in order
