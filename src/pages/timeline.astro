@@ -1,6 +1,8 @@
 ---
 import HomePanel from "@/components/home-panel.astro";
 import Layout from "@/layouts/layout.astro";
+
+import * as usingWriting from "@/content/misc/using-writing-to-reach-a-result.md";
 ---
 
 <Layout title="Misc">
@@ -34,4 +36,14 @@ import Layout from "@/layouts/layout.astro";
       );
     })
   } -->
+  <section class="p-4 border-b">
+    <h2 class="mb-2">{usingWriting.frontmatter.title}</h2>
+    <p class="text-muted-foreground">Started {new Date(usingWriting.frontmatter.dateStarted).toLocaleDateString()}</p>
+    <p class="text-muted-foreground">
+      Last updated {new Date(usingWriting.frontmatter.lastUpdated).toLocaleDateString()}
+    </p>
+    <article class="prose-primary">
+      <usingWriting.Content />
+    </article>
+  </section>
 </Layout>

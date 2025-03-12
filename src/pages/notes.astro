@@ -1,0 +1,99 @@
+---
+import Layout from "@/layouts/layout.astro";
+
+import HomePanel from "@/components/home-panel.astro";
+---
+
+<Layout title="About">
+  <HomePanel />
+
+  <div class="p-4 w-full">
+    <h1 class="text-2xl font-bold mb-4">Notes</h1>
+    <ul>
+      <li>
+        <div class="flex items-center">
+          <svg
+            class="w-5 h-5 text-yellow-500 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+          </svg>
+          <span class="font-semibold">systems</span>
+        </div>
+        <ul class="ml-6">
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-yellow-500 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+              </svg>
+              <span class="font-semibold">oss</span>
+            </div>
+            <ul class="ml-6">
+              <li class="flex items-center">
+                <span class="w-5 h-5 border-l-2 border-b-2 border-gray-300 mr-2"></span>
+                <a href="#" class="text-blue-500 hover:underline">bookmarking-and-reading</a>
+              </li>
+              <li class="flex items-center">
+                <span class="w-5 h-5 border-l-2 border-b-2 border-gray-300 mr-2"></span>
+                <a href="#" class="text-blue-500 hover:underline">password-manager</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-yellow-500 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+              </svg>
+              <span class="font-semibold">public</span>
+            </div>
+            <ul class="ml-6">
+              <li class="flex items-center">
+                <span class="w-5 h-5 border-l-2 border-b-2 border-gray-300 mr-2"></span>
+                <a href="#" class="text-blue-500 hover:underline">index.html</a>
+              </li>
+              <li class="flex items-center">
+                <span class="w-5 h-5 border-l-2 border-b-2 border-gray-300 mr-2"></span>
+                <a href="#" class="text-blue-500 hover:underline">styles.css</a>
+              </li>
+            </ul>
+          </li>
+          <li class="flex items-center">
+            <span class="w-5 h-5 border-l-2 border-b-2 border-gray-300 mr-2"></span>
+            <a href="#" class="text-blue-500 hover:underline">package.json</a>
+          </li>
+          <li class="flex items-center">
+            <span class="w-5 h-5 border-l-2 border-b-2 border-gray-300 mr-2"></span>
+            <a href="#" class="text-blue-500 hover:underline">README.md</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</Layout>

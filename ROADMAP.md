@@ -32,6 +32,13 @@
 - [ ] fix font FOUC
 - [ ] remove shadcn
 - [ ] open graph metadata
+- [ ] fix 404 page (add padding and minimal styles)
+- [ ] update design
+  - [ ] change header title typeface
+  - [ ] add more colors
+  - [ ] bigger home button
+  - [ ] put writing on front page
+  - [ ] replace radix icons with lucide
 
 # Done:
 

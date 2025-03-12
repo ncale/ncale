@@ -28,6 +28,13 @@ module.exports = {
         youngSerif: ["Young Serif", "serif"],
         career: ["Career", "sans-serif"],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "80ch",
+          },
+        },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
