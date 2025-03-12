@@ -13,9 +13,19 @@ category: "misc"
 draft: true
 ---
 
-I'm a programmer, [indie web](https://indieweb.org/) enthusiast, and novice writer.
+I'm a programmer and [indie web](https://indieweb.org/) enthusiast. I put some of my writings on this website as a learning exercise and tiny body of work.
 
-I started my career in business consulting and shifted into web development a year-ish ago due to wanting more experience building things. Now I'm a full-stack [typescript](https://en.wikipedia.org/wiki/TypeScript) dev for a [web3](https://en.wikipedia.org/wiki/Web3) startup, program things I find interesting, work on small projects in the ethereum ecosystem, and spend the rest of my productive time learning about tech / AI / crypto / software.
+About me - I work as a full-stack dev for a [crypto](https://en.wikipedia.org/wiki/Web3) startup and my two biggest interests are defi and AI.
+
+Sometimes I hack on side-projects.
+
+[Typescript](https://en.wikipedia.org/wiki/TypeScript) is my language of choice, but am interested in and dabble with other languages when it makes sense.
+
+Sitemap:
+
+- timeline has a feed of all posts in order of most recently edited
+- about has more general info about me and this website
+- contact
 
 <!--
 My motivation for creating this site is to
