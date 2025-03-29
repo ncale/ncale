@@ -4,12 +4,14 @@ title: "Using Writing to Reach a Result"
 description: ""
 author: "Nick Brodeur"
 v0.1: "2025-01-25" # format: YYYY-MM-DD
+dateStarted: "2025-01-25" # format: YYYY-MM-DD
+lastUpdated: "2025-03-29" # format: YYYY-MM-DD
 image: {
 	src: "",
 	alt: ""
 }
 category: ""
-draft: true
+draft: false
 proofreaders: 'lauren k.'
 ---
 
@@ -27,6 +29,6 @@ Papers with many arguments, extensions, and natural following conclusions use a 
 
 Put simply, this is a very straightforward relationship and writing rule: increasing your complexity increases the mental burden of your reader, but delivers more results to build from in exchange.
 
-With regard to math papers, TT's suggestion to \\/ thoroughness is of utmost importance, which makes sense. Math is an extremely rigorous domain where all stones must be overturned. "Logical statements that seem like they follow" (<- rewrite) have many hidden assumptions, and explicitly stating points that extend from an argument can help readers reach points they wouldn't otherwise.
+With regard to math papers, TT's suggestion to be thorough makes sense. Math is a rigorous domain where all stones must be overturned. Logical statements that seem like they follow have many hidden assumptions, and explicitly stating points that extend from an argument can help readers reach points they wouldn't otherwise.
 
-There are always hidden assumptions and conclusions that are left to the reader to fill in. It is up to the writer to decide which to state explicitly on their way to reaching a conclusion. Obviously, your level of rigor depends on many things, most importantly, your topic and your reader.
+There are always hidden assumptions and conclusions that are left to the reader to fill in. It is up to the writer to decide which to state explicitly on their way to reaching a conclusion. Your level of rigor should depend on your topic and your reader.

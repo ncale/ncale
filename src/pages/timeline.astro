@@ -2,6 +2,7 @@
 import HomePanel from "@/components/home-panel.astro";
 import Layout from "@/layouts/layout.astro";
 
+import * as improvingTypescript from "@/content/misc/improving-typescript.md";
 import * as usingWriting from "@/content/misc/using-writing-to-reach-a-result.md";
 ---
 
@@ -36,6 +37,19 @@ import * as usingWriting from "@/content/misc/using-writing-to-reach-a-result.md
       );
     })
   } -->
+  <section class="p-4 border-b">
+    <h2 class="mb-2">{improvingTypescript.frontmatter.title}</h2>
+    <p class="text-muted-foreground">
+      Started {new Date(improvingTypescript.frontmatter.dateStarted).toLocaleDateString()}
+    </p>
+    <p class="text-muted-foreground mb-4">
+      Last updated {new Date(improvingTypescript.frontmatter.lastUpdated).toLocaleDateString()}
+    </p>
+    <article class="prose-primary mb-12">
+      <improvingTypescript.Content />
+    </article>
+  </section>
+
   <section class="p-4 border-b">
     <h2 class="mb-2">{usingWriting.frontmatter.title}</h2>
     <p class="text-muted-foreground">Started {new Date(usingWriting.frontmatter.dateStarted).toLocaleDateString()}</p>

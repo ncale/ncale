@@ -12,8 +12,9 @@ const posts = sortPosts(getMiscPosts());
       <intro.Content />
     </article>
   </section>
-  <section class="flex items-center border-b mb-16">
-    <a href="/timeline" class="p-3 text-2xl w-full hover:bg-yellow-500/20 transition-colors border-r">👀 Timeline</a>
-    <a href="/notes" class="p-3 text-2xl w-full hover:bg-yellow-500/20 transition-colors">📚 Notes</a>
+  <section class="flex items-center border-b mb-16 [&>*:not(:last-child)]:border-r">
+    <a href="/about" class="p-3 text-2xl w-full hover:bg-yellow-500/20 transition-colors">� About</a>
+    <a href="/timeline" class="p-3 text-2xl w-full hover:bg-yellow-500/20 transition-colors">👀 Timeline</a>
+    <!-- <a href="/notes" class="p-3 text-2xl w-full hover:bg-yellow-500/20 transition-colors">📚 Notes</a> -->
   </section>
 </Layout>

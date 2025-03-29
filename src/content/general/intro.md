@@ -13,13 +13,11 @@ category: "misc"
 draft: true
 ---
 
-I'm a programmer and [indie web](https://indieweb.org/) enthusiast. I put some of my writings on this website as a learning exercise and tiny body of work.
+I'm a programmer and [indie web](https://indieweb.org/) enthusiast. I write on this website as a learning exercise and tiny body of work.
 
-About me - I work as a full-stack dev for a [crypto](https://en.wikipedia.org/wiki/Web3) startup and my two biggest interests are defi and AI.
+About me - I work as a full-stack dev at a [crypto](https://en.wikipedia.org/wiki/Web3) startup and my two biggest interests are defi and AI. Sometimes I hack on side-projects.
 
-Sometimes I hack on side-projects.
-
-[Typescript](https://en.wikipedia.org/wiki/TypeScript) is my language of choice, but am interested in and dabble with other languages when it makes sense.
+[Typescript](https://en.wikipedia.org/wiki/TypeScript) is my language of choice, but dabble with other languages when it makes sense.
 
 Sitemap:
 
