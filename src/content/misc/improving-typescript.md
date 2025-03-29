@@ -1,6 +1,6 @@
 ---
-shortTitle: "poesif_2025-03-03"
-title: "poesif - march 3, 2025"
+shortTitle: "Typescript Error Handling"
+title: "Typescript Error Handling"
 description: ""
 author: "Nick Brodeur"
 v0.1: "2025-03-03"
@@ -11,7 +11,7 @@ image: {
 	alt: ""
 }
 category: ""
-draft: true
+draft: false
 proofreaders: []
 ---
 
